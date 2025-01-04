@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Finger+Paint&family=Shippori+Antique&display=swap');
+:root{
+    /*font*/
+    --fp: "Finger Paint", serif;
+
+}
+
+
+ul{
+  list-style: none;  
+}
+body{
+    background: #FFF1F4;
+    font-family: var(--fp);
+}
+
+header{
+    background: url(img/header_bar.png) 0 0/100% 100% no-repeat;
+    width: 100%;
+    height: 120px;
+    z-index: 100;
+}
+.header__logo{
+    height: 80px;
+    margin-right: 50px;
+}
+.header__menu{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding: 0px 0 0 40px;
+}
+.menu__lists{
+    display: flex;
+    font-size: 32px;   
+    color: #FFF1F4;
+}
+.menu__list{
+    margin-right: 50px;  
+    
+}
