@@ -1,0 +1,199 @@
+@import url(blocks/header.css);
+@import url(blocks/footer.css);
+:root{
+    /*font*/
+    --f1: "Finger Paint", serif;
+    --f2: "Shippori Antique", serif;
+
+    /*colors*/
+    --cf: #FFECE5;
+    --cf2: #FFE1E8;
+
+    --ct1: #FFF1F4;
+    --ct2: #372a31;
+
+}
+body{
+    display: flex;
+    flex-direction: column;
+}
+.main__title{
+    font-size: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    p{
+        z-index: 100;
+        padding: 0;
+        margin: 0 0 -40px 0;
+    }
+}
+main {
+    flex: 1; 
+    background: var(--cf2);
+    .img_plus{
+        width: 100%;
+        position: relative;
+        bottom: 50px;
+    }
+    .main__content{
+        padding: 40px 150px; 
+
+        .main__blocks{
+            
+            .block1{
+                display: flex;
+                align-items: flex-start;
+                justify-content: flex-end;
+                margin-bottom: 200px;
+                .block__info{
+                    
+                    position: relative;
+                    left: 30%;
+                    bottom: 100px;
+                    img {
+                        display: block;
+                        width: 70%; /* або вкажіть потрібний розмір */
+                        height: auto;
+                    }
+                    p{
+                        position: relative;
+                        text-align: center;
+                        font-size: 19px;
+                        bottom: 200px;
+                        width: 60%;
+                    }
+                }
+                img{
+                    width: 40%;
+                }
+            
+            }
+            .block2{
+                display: flex;
+                align-items: flex-start;
+                justify-content: left;
+                img{
+                    width: 30%;
+                    
+                }
+                .block__info{
+                    display: flex;
+                    justify-content: start;
+                    align-items: center;
+                    position: relative;
+                    bottom: 70px;
+                    right: 5%;
+                    img {
+                        display: block;
+                        width: 31%; /* або вкажіть потрібний розмір */
+                        height: auto;
+                    }
+                    p{
+                        position: relative;
+                        text-align: center;
+                        font-size: 20px;
+                        line-height: 40px;
+                        right: 28%;
+                        width: 25%;
+                        color: var(--ct1);
+                    }
+                }
+                
+            
+            }
+            .main__block{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                
+                .block__info {
+                    display: flex;
+                    align-items: flex-start;
+                    justify-content: flex-start;
+                    img{
+                        width: 80px;
+                        height: auto;
+                        margin-right: 10px;
+                    }
+                    .block__texts{
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: flex-start;
+                        width: 60%;
+                        p{
+                            font-size: 20px;
+                        }
+                        .block__title{
+                            position: relative;
+                            right: 8%;
+                            font-size: 60px;
+                            margin: 5px 0;
+                            span{
+                                color: var(--ct1);
+                            }
+                        }
+                        .block__btn{
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            background: url(img/red_h.png) 0 0/100% 100% no-repeat;
+                            color: var(--ct1);
+                            width: 400px;
+                            p{
+                                font-size: 30px;
+                                margin: 10px;
+                            }
+                        }
+                    }
+                }
+                .block__info2 {
+                    display: flex;
+                    align-items: flex-start;
+                    justify-content: flex-end;
+                    img{
+                        width: 80px;
+                        height: auto;
+                        margin-right: 10px;
+                    }
+                    .block__texts{
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: flex-start;
+                        width: 60%;
+                        p{
+                            font-size: 20px;
+                        }
+                        .block__title{
+                            position: relative;
+                            right: 8%;
+                            font-size: 60px;
+                            margin: 5px 0;
+                            span{
+                                color: var(--ct1);
+                            }
+                        }
+                        .block__btn{
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            background: url(img/red_h.png) 0 0/100% 100% no-repeat;
+                            color: var(--ct1);
+                            width: 400px;
+                            p{
+                                font-size: 30px;
+                                margin: 10px;
+                            }
+                        }
+                    }
+                }
+                img{
+                    width: 30%;
+                }
+            }
+        }
+    }
+}
+

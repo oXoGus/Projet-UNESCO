@@ -1,0 +1,189 @@
+@charset "UTF-8";
+@import url(blocks/header.css);
+@import url(blocks/footer.css);
+:root {
+  /*font*/
+  --f1: "Finger Paint", serif;
+  --f2: "Shippori Antique", serif;
+  /*colors*/
+  --cf: #FFECE5;
+  --cf2: #FFE1E8;
+  --ct1: #FFF1F4;
+  --ct2: #372a31;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.main__title {
+  font-size: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main__title p {
+  z-index: 100;
+  padding: 0;
+  margin: 0 0 -40px 0;
+}
+
+main {
+  flex: 1;
+  background: var(--cf2);
+}
+main .img_plus {
+  width: 100%;
+  position: relative;
+  bottom: 50px;
+}
+main .main__content {
+  padding: 40px 150px;
+}
+main .main__content .main__blocks .block1 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  margin-bottom: 200px;
+}
+main .main__content .main__blocks .block1 .block__info {
+  position: relative;
+  left: 30%;
+  bottom: 100px;
+}
+main .main__content .main__blocks .block1 .block__info img {
+  display: block;
+  width: 70%; /* або вкажіть потрібний розмір */
+  height: auto;
+}
+main .main__content .main__blocks .block1 .block__info p {
+  position: relative;
+  text-align: center;
+  font-size: 19px;
+  bottom: 200px;
+  width: 60%;
+}
+main .main__content .main__blocks .block1 img {
+  width: 40%;
+}
+main .main__content .main__blocks .block2 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: left;
+}
+main .main__content .main__blocks .block2 img {
+  width: 30%;
+}
+main .main__content .main__blocks .block2 .block__info {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  position: relative;
+  bottom: 70px;
+  right: 5%;
+}
+main .main__content .main__blocks .block2 .block__info img {
+  display: block;
+  width: 31%; /* або вкажіть потрібний розмір */
+  height: auto;
+}
+main .main__content .main__blocks .block2 .block__info p {
+  position: relative;
+  text-align: center;
+  font-size: 20px;
+  line-height: 40px;
+  right: 28%;
+  width: 25%;
+  color: var(--ct1);
+}
+main .main__content .main__blocks .main__block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+main .main__content .main__blocks .main__block .block__info {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+main .main__content .main__blocks .main__block .block__info img {
+  width: 80px;
+  height: auto;
+  margin-right: 10px;
+}
+main .main__content .main__blocks .main__block .block__info .block__texts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 60%;
+}
+main .main__content .main__blocks .main__block .block__info .block__texts p {
+  font-size: 20px;
+}
+main .main__content .main__blocks .main__block .block__info .block__texts .block__title {
+  position: relative;
+  right: 8%;
+  font-size: 60px;
+  margin: 5px 0;
+}
+main .main__content .main__blocks .main__block .block__info .block__texts .block__title span {
+  color: var(--ct1);
+}
+main .main__content .main__blocks .main__block .block__info .block__texts .block__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(img/red_h.png) 0 0/100% 100% no-repeat;
+  color: var(--ct1);
+  width: 400px;
+}
+main .main__content .main__blocks .main__block .block__info .block__texts .block__btn p {
+  font-size: 30px;
+  margin: 10px;
+}
+main .main__content .main__blocks .main__block .block__info2 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+main .main__content .main__blocks .main__block .block__info2 img {
+  width: 80px;
+  height: auto;
+  margin-right: 10px;
+}
+main .main__content .main__blocks .main__block .block__info2 .block__texts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 60%;
+}
+main .main__content .main__blocks .main__block .block__info2 .block__texts p {
+  font-size: 20px;
+}
+main .main__content .main__blocks .main__block .block__info2 .block__texts .block__title {
+  position: relative;
+  right: 8%;
+  font-size: 60px;
+  margin: 5px 0;
+}
+main .main__content .main__blocks .main__block .block__info2 .block__texts .block__title span {
+  color: var(--ct1);
+}
+main .main__content .main__blocks .main__block .block__info2 .block__texts .block__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(img/red_h.png) 0 0/100% 100% no-repeat;
+  color: var(--ct1);
+  width: 400px;
+}
+main .main__content .main__blocks .main__block .block__info2 .block__texts .block__btn p {
+  font-size: 30px;
+  margin: 10px;
+}
+main .main__content .main__blocks .main__block img {
+  width: 30%;
+}/*# sourceMappingURL=main.css.map */
