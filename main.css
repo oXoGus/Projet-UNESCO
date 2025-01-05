@@ -104,13 +104,13 @@ main .main__content {
   align-items: flex-start;
   width: 60%;
 }
-.block__texts p {
+.block__text {
   font-size: 20px;
 }
 .block__title {
   position: relative;
   right: 8%;
-  font-size: 60px;
+  font-size: 50px;
   margin: 5px 0;
 }
 .block__title span {
