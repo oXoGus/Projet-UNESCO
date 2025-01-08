@@ -1,0 +1,113 @@
+@import url(../blocks/header.css);
+@import url(../blocks/footer.css);
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 60px;
+}
+.main__header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+}
+.main__header_title{
+    font-size: 70px;
+    text-align: center;
+}
+.main__header_text{
+    font-size: 24px;
+    text-align: left;
+    padding: 20px 0;
+}
+
+
+.main__content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.content__header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+.content__header p{
+    font-size: 18px;
+    text-align: center;
+    max-width: 60%;
+    margin: 0;
+}
+.content__header .content__header_title{
+    color: #FFF;
+    background: url(img/Group.png) 0 0/100% 100% no-repeat;
+    text-align: center;
+    padding: 0 200px 0 40px;
+    margin: 0;
+    font-size: 48px;
+    position: relative;
+    left: 40px;
+}
+
+.content__blocks{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 200px;
+}
+
+.blocks__left, .blocks__right{
+    padding-top: 80px;
+    display: flex;
+    flex-direction: column;
+    z-index: 100;
+}
+.blocks__left img{
+    max-width: 500px;
+    margin-bottom: 40px;
+}
+.blocks__right{
+    position: relative;
+    left: 50px;
+}
+.blocks__right img{
+    max-width: 500px;
+    margin-bottom: 40px;
+}
+
+.block{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.block__title{
+    background: url(img/red_left.png) 0 0/100% 100% no-repeat;
+    font-size: 48px;
+    padding: 0 100px 0 10px;
+    margin: 0 0 10px 0;
+    color: #FFF;
+    width: 100%;
+}
+.block__text{
+    font-size: 18px;
+    text-align: left;
+    width: 450px;
+}
+.right{
+    background: url(img/red_right.png) 0 0/100% 100% no-repeat;
+    text-align: right;
+    padding: 0 10px 0 100px;
+}
+.r{
+    text-align: right;
+}
