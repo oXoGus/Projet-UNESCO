@@ -21,8 +21,13 @@ a{
 }
 body{
     background: #FFF1F4;
-    font-family: var(--fp);
+    font-family: var(--f2);
+
 }
+.ff1{
+    font-family: var(--f1);
+}
+
 
 header{
     background: url(img/header_bar.png) 0 0/100% 100% no-repeat;
@@ -31,7 +36,7 @@ header{
     z-index: 100;
 }
 .header__logo{
-    height: 80px;
+    height: 75px;
     margin-right: 50px;
 }
 .header__menu{
@@ -48,4 +53,8 @@ header{
 .menu__list{
     margin-right: 50px;  
     
+}
+.menu__list a:hover{
+    color: #2F0711;
+    transition: 0.3s;
 }
