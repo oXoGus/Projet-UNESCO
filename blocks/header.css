@@ -58,3 +58,22 @@ header{
     color: #2F0711;
     transition: 0.3s;
 }
+
+
+/* ----------------------------------------------
+                    Adaptive
+------------------------------------------------- */
+
+@media (max-width: 1150px) {
+    header{
+        background: url(img/header_bar.png) 0 0/150% 100% no-repeat;        
+    }
+}
+
+@media (max-width: 1024px) {
+      .menu__list{
+        font-size: 28px;
+      }
+}
+@media (max-width: 768px) {
+}
