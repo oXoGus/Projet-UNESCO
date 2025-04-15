@@ -99,14 +99,7 @@ header{
   
   .lang:hover .lang_btn {background-color: #3e8e4100;}
 
-  .header__title{
-    position: absolute;
-    bottom: 10px;
-    left: 10px;
-    color: rgb(255, 255, 255);
-    font-size: 100px;
-    font-family: var(--f1);
-  }
+
 
 
 /* ----------------------------------------------
