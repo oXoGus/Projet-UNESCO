@@ -59,7 +59,7 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #FFE1E8 ;
+    background: #FFF5F7;
     width: 100%;
     flex-wrap: wrap;
 }
