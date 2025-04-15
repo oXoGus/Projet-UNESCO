@@ -3,6 +3,7 @@
 
 
 
+
 main{
     display: flex;
     flex-direction: column;
@@ -110,6 +111,9 @@ main{
 }
 
 @media (max-width: 1024px) {
+    .main__header img{
+        width: 100%;
+    }
     .content__block{
         flex-direction: column;
     } 

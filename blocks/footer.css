@@ -29,7 +29,9 @@ footer{
     align-items: center;
     font-family: var(--f1);
     color: #FFF1F4;
+    width: 100%;
 }
 .footer__lst{
     margin-right: 150px;
+    width: 100%;
 }

@@ -5,36 +5,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Patrimoine</title>
     <link rel="stylesheet" href="patrimoine.css">
+    <style>
+        body, html {
+          height: 100%;
+          margin: 0;
+        }
+        header {
+          /* The image used */
+          background-image: url("../img/Byōdō-in.jpg");
+        
+          /* Full height */
+          height: 100%; 
+        
+          /* Center and scale the image nicely */
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+        </style>
 </head>
 <body>
     <header>
         <div class="header__main ff1">
 
             <div class="header__menu">
-                <a href="../index.html"><img class="header__logo" src="../img/logo.png" alt=""></a>
-                <ul class="menu__lists">
-                    <li class="menu__list"><a href="../histoire/histoire.html">Histoire</a></li>
-                    <li class="menu__list"><a href="patrimoine.html" style="color: #2F0711;">Patrimoine</a></li>
-                    <li class="menu__list">Langue ▾</li>
-                </ul>
+                <input type="checkbox" id="burger-toggle">
+                <label for="burger-toggle" class="burger-container">
+                    <div class="burger-line"></div>
+                    <div class="burger-line"></div>
+                    <div class="burger-line"></div>
+                </label>
+                <nav class="nav-menu">
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+                <a href="../index.html" class="header__logo"><img  src="../img/logo.png" alt=""></a>
+                <div class="lang">
+                    <button class="lang_btn"><p>Fr</p></button>
+                    <div class="lang-content">
+                      <a href="#">Fr</a>
+                      <a href="#">En</a>
+                    </div>
+                  </div>
             </div>
+            <p class="header__title">Son patrimoine</p>
         </div>
     </header>
     <main>
-        <div class="main__header">
-            <div class="main__header_title ff1">
-                Le patrimoine <br>de Kyoto
-            </div>
-            <img src="img/black_line.png" alt="" class="main__header_img">
-            <div class="main__header_text">
-                Kyoto est considérée capitale culturelle du Japon avec près de 2 000 temples, ses sanctuaires et ses palais, ses ponts, ses jardins et son architecture. 
-            </div>
-        </div>
         <div class="main__content">
-            <div class="content__title ff1">Ses temples</div>
-
+            <!-- ////////////////////////////////////////////////////////////////////////////////// -->
+            <!-- Blocks de contenu -->
+            <!-- ////////////////////////////////////////////////////////////////////////////////// -->
             <div class="content__blocks">
-
                 <div class="content__block">
                     <div class="block__img ff1">
                         <p>Kiyomizu-dera</p>
@@ -110,6 +137,10 @@
             </div>
         </div>
     </main>
+    
+            <!-- ////////////////////////////////////////////////////////////////////////////////// -->
+            <!-- Footer -->
+            <!-- ////////////////////////////////////////////////////////////////////////////////// -->
     <footer>
         <div class="footer__lists ff1">
             <a href="" class="footer__lst">À propos de nous</a>
