@@ -92,19 +92,16 @@
   .burger-line:nth-child(3){
     background: url(img/line3.svg) 0 0/100% 100% no-repeat;
   }
-  /* Checkbox Hack */
   #burger-toggle {
     display: none;
   }
   
-  /* Navigation Styles */
   .nav-menu {
     position: fixed;
     top: 0;
     left: -500px;
     width: 500px;
     height: 100%;
-    /* background: linear-gradient(135deg, var(--primary-color) 0%, #0064c8 100%); */
     background: #FFF5F7;
     transition: left 0.4s cubic-bezier(0.77, 0.2, 0.05, 1);
     box-shadow: -4px 0 15px #00000033;
