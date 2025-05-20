@@ -11,9 +11,12 @@
   --ct2: #372a31;
 }
 
-body {
-  display: flex;
-  flex-direction: column;
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .main__title {
@@ -28,75 +31,178 @@ body {
   margin: 0 0 -40px 0;
 }
 
-main {
-  flex: 1;
-  background: var(--cf2);
-}
 main .img_plus {
   width: 100%;
   position: relative;
   bottom: 50px;
 }
 main .main__content {
-  padding: 40px 150px;
+  padding: 150px;
 }
-.block1 {
+.block1, .block2 {
   display: flex;
+  position: relative;
+  width: 100%;
+  max-width: 1700px;
+  margin: 0 auto;
+}
+
+.block1 {
   align-items: flex-start;
   justify-content: flex-end;
-  margin-bottom: 200px;
+  margin-bottom: 120px; 
 }
+
+.block2 {
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.block__info {
+  position: relative;
+  text-align: center;
+  box-sizing: border-box;
+}
+
 .block1 .block__info {
   background: url(img/green.png) 0 0/100% 100% no-repeat;
-  padding: 20px 50px;
-  text-align: center;
-  font-size: 22px;
+  padding: 20px 5%;
+  font-size: clamp(16px, 2vw, 22px); 
   width: 50%;
   position: relative;
   left: 15%;
   bottom: 60px;
+  z-index: 2;
 }
+
 .block1 img {
   width: 50%;
+  max-width: 800px;
+  object-fit: cover;
 }
-.block2 {
-  display: flex;
-  align-items: flex-start;
-  justify-content: left;
-}
+
+/* Стилі для блоку 2 */
 .block2 img {
   width: 35%;
+  max-width: 600px;
+  object-fit: cover;
 }
+
 .block2 .block__info {
   background: url(img/grey.png) 0 0/100% 100% no-repeat;
   display: flex;
-  justify-content: start;
+  justify-content: center;
   align-items: center;
   position: relative;
   text-align: center;
   bottom: 50px;
   right: 70px;
-  font-size: 20px;
-  line-height: 40px;
+  font-size: clamp(14px, 1.8vw, 20px); /* Адаптивний розмір тексту */
+  line-height: clamp(24px, 3vw, 40px);
   color: var(--ct1);
-  width: 20%;
-  padding: 150px 70px;
+  width: 30%;
+  padding: 100px 5%;
+  z-index: 2;
+}
+
+/* Медіа-запити для адаптивності */
+@media screen and (max-width: 1024px) {
+  .block1 .block__info {
+    left: 10%;
+    bottom: 40px;
+    width: 55%;
+  }
+  
+  .block2 .block__info {
+    right: 50px;
+    width: 35%;
+    padding: 80px 5%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .block1 {
+    margin-bottom: 80px;
+  }
+
+  .block1 .block__info {
+    left: 5%;
+    width: 60%;
+  }
+
+  .block2 .block__info {
+    right: 30px;
+    width: 40%;
+    padding: 60px 5%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .block1, .block2 {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .block1 {
+    margin-bottom: 40px;
+  }
+  
+  .block1 img, .block2 img {
+    width: 70%;
+    max-width: 100%;
+    order: 1;
+  }
+  
+  .block1 .block__info, .block2 .block__info {
+    width: 80%;
+    position: relative;
+    left: 0;
+    right: 0;
+    bottom: 30px;
+    order: 2;
+  }
+  
+  .block2 .block__info {
+    padding: 40px 5%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .block1 img, .block2 img {
+    width: 90%;
+  }
+  
+  .block1 .block__info, .block2 .block__info {
+    width: 90%;
+  }
+
+  .block2 .block__info {
+    padding: 30px 5%;
+  }
 }
 .main__block {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  max-width: 1800px;
+  margin: 0 auto 60px;
+  width: 100%;
+  position: relative;
 }
+
 .main__block .block__info {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
+  width: 60%;
 }
+
 .main__block .block__info img {
   width: 80px;
   height: auto;
   margin-right: 10px;
 }
+
 .block__texts {
   display: flex;
   flex-direction: column;
@@ -104,35 +210,174 @@ main .main__content {
   align-items: flex-start;
   width: 60%;
 }
+
 .block__text {
-  font-size: 20px;
+  font-size: clamp(16px, 2vw, 20px);
+  line-height: 1.4;
+  margin-bottom: 20px;
 }
+
 .block__title {
   position: relative;
   right: 10%;
-  font-size: 50px;
-  margin: 5px 0;
+  font-size: clamp(32px, 4vw, 50px);
+  margin: 5px 0 15px;
+  font-weight: bold;
 }
+
 .block__title span {
   color: var(--ct1);
 }
+
 .block__btn {
   display: flex;
   justify-content: center;
   align-items: center;
   background: url(img/red_h.png) 0 0/100% 100% no-repeat;
   color: var(--ct1);
-  width: 400px;
+  width: 100%;
+  max-width: 400px;
+  margin-top: 10px;
 }
+
 .block__btn a {
-  font-size: 30px;
+  font-size: clamp(20px, 2.5vw, 30px);
   margin: 10px;
+  color: var(--ct1);
+  text-decoration: none;
 }
+
 .main__block .right {
   display: flex;
   align-items: flex-start;
   justify-content: flex-end;
 }
-.main__block img {
+
+.main__block > img {
   width: 30%;
-}/*# sourceMappingURL=main.css.map */
+  height: auto;
+  object-fit: cover;
+  max-height: 500px;
+}
+
+@media screen and (max-width: 1200px) {
+  .main__block {
+    padding: 0 20px;
+  }
+  
+  .main__block .block__info {
+    width: 65%;
+  }
+  
+  .main__block > img {
+    width: 30%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .main__block .block__info {
+    width: 60%;
+  }
+  
+  .main__block > img {
+    width: 35%;
+  }
+  
+  .block__texts {
+    width: 70%;
+  }
+  
+  .block__btn {
+    max-width: 350px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  body {
+    background-color: #fff1f1; 
+  }
+  
+  .main__block {
+    flex-direction: column;
+    margin-bottom: 30px;
+    padding: 0;
+    width: 100%;
+  }
+  
+  .main__block .block__info,
+  .main__block .right {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 0 15px;
+    box-sizing: border-box;
+  }
+  
+  .main__block .block__info img {
+    width: 60px;
+    margin-right: 5px;
+  }
+  
+  .block__texts {
+    width: calc(100% - 65px);
+  }
+  
+  .block__title {
+    font-size: 34px;
+    right: 0;
+    margin-bottom: 10px;
+  }
+  
+  .block__text {
+    font-size: 16px;
+    line-height: 1.3;
+    margin-bottom: 10px;
+  }
+  
+  .main__block > img {
+    width: 100%;
+    max-height: none;
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+  
+  .block__btn {
+    max-width: 250px;
+    margin-top: 5px;
+  }
+  
+  .block__btn a {
+    font-size: 22px;
+    margin: 5px;
+  }
+  
+  .main__block:first-child {
+    flex-direction: column;
+  }
+  
+  .main__block:nth-child(2) {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .main__block .block__info img {
+    width: 50px;
+  }
+  
+  .block__title {
+    font-size: 28px;
+  }
+  
+  .block__text {
+    font-size: 14px;
+    line-height: 1.2;
+  }
+  
+  .block__btn {
+    max-width: 200px;
+  }
+  
+  .block__btn a {
+    font-size: 18px;
+  }
+}

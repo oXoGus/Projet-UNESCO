@@ -5,68 +5,111 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kyoto</title>
     <link rel="stylesheet" href="main.css">
+        <style>
+        body, html {
+          height: 100%;
+          margin: 0;
+        }
+        header {
+          /* The image used */
+          background-image: url("img/Kyoto.jpg");
+        
+          /* Full height */
+          height: 100%; 
+        
+          /* Center and scale the image nicely */
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+        .header__title{
+            position: absolute;
+            top: 20%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: rgb(255, 255, 255);
+            font-size: 300px;
+            font-family: var(--f1);
+            text-align: center;
+        }
+        </style>
 </head>
 <body>
     <header>
         <div class="header__main ff1">
-
             <div class="header__menu">
-                <a href="index.html"><img class="header__logo" src="img/logo.png" alt=""></a>
-                <ul class="menu__lists">
-                    <li class="menu__list"><a href="histoire/histoire.html">Histoire</a></li>
-                    <li class="menu__list"><a href="patrimoine/patrimoine.html">Patrimoine</a></li>
-                    <li class="menu__list">Langue ▾</li>
-                </ul>
+                <input type="checkbox" id="burger-toggle">
+                <label for="burger-toggle" class="burger-container">
+                    <div class="burger-line"></div>
+                    <div class="burger-line"></div>
+                    <div class="burger-line"></div>
+                </label>
+                <span class="menu-label">Menu</span>
+                 <nav class="nav-menu">
+                  <ul>
+                    <li><a href="#home">Accueil</a></li>
+                    <li><a class="active" href="#about">Patrimoine de Kyoto</a></li>
+                    <li><a href="#services">Histoire de Kyoto </a></li>
+                    <li><a href="#portfolio">Itinéraires à thème</a></li>
+                    <li><a href="#portfolio">Questions fréquentes</a></li>
+                    <li><a href="#portfolio">Partager vos experiences à Kyoto</a></li>
+                    <li><a href="#contact">Nous-contacter</a></li>
+                  </ul>
+                </nav>
+                <a href="../index.html" class="header__logo"><img  src="../img/logo.png" alt=""></a>
+                <div class="lang">
+                    <button class="lang_btn"><p>Fr</p></button>
+                    <div class="lang-content">
+                      <a href="#">Fr</a>
+                      <a href="#">En</a>
+                    </div>
+                  </div>
             </div>
+            <p class="header__title">Kyoto</p>
         </div>
     </header>
-    <div class="main__title ff1">
-        <p>Kyoto</p>
-       </div>
     <main>
-       
-        <img src="img/main.png" alt="" class="img_plus">
        <div class="main__content">
-        <div class="main__blocks">
-            <div class="block1">
-                <div class="block__info">
-                    Notre équipe, constituée de trois étudiants en BUT INFORMATIQUE en première année, a le plaisir de vous présenter KYOTO et son patrimoine dans le cadre d’une médiation culturelle et numérique en partenariat avec L’UNESCO. Bonne visite à tous.
+            <div class="main__blocks">
+                <div class="block1">
+                    <div class="block__info">
+                        Notre équipe, constituée de trois étudiants en BUT INFORMATIQUE en première année, a le plaisir de vous présenter KYOTO et son patrimoine dans le cadre d’une médiation culturelle et numérique en partenariat avec L’UNESCO. Bonne visite à tous.
+                    </div>
+                    <img src="img/Byōdō-in.jpg" alt="">
                 </div>
-                <img src="img/Byōdō-in.jpg" alt="">
-            </div>
-            <div class="block2">
-                <img src="img/Yasaka.jpg" alt="">
-                <div class="block__info">
-                    Autrefois capitale, désormais capitale culturelle et plus belle ville du Japon, KYOTO  regorge de patrimoine et d’histoire. Nichée entre les montagnes, avec ses 2000 temples, ses sanctuaires, palais, jardins, son architecture et ses évènements culturels, il y en a pour tous les goûts et tous les âges. 
+                <div class="block2">
+                    <img src="img/Yasaka.jpg" alt="">
+                    <div class="block__info">
+                        Autrefois capitale, désormais capitale culturelle et plus belle ville du Japon, KYOTO  regorge de patrimoine et d’histoire. Nichée entre les montagnes, avec ses 2000 temples, ses sanctuaires, palais, jardins, son architecture et ses évènements culturels, il y en a pour tous les goûts et tous les âges. 
+                    </div>
                 </div>
-            </div>
-           <div class="main__block">
-                <div class="block__info">
-                    <img src="img/red_v.png" alt="">
-                    <div class="block__texts">
-                        <p class="block__title ff1"><span>L</span>’histoire de Kyoto</p>
-                        <p class="block__text">Nichée entre les montagnes au centre de l'ile d’Honshu, Kyoto fut la capitale japonaise de 794 à 1868. Elle est considérée comme la plus belle ville du japon, et ayant échappée aux bombes de la seconde guerre mondiale, elle possède encore de nombreux bâtiments d'avant guerre. </p>
-                        <div class="block__btn ff1">
-                            <a href="histoire/histoire.html">en savoir +</a>
+               <div class="main__block">
+                    <div class="block__info">
+                        <img src="img/red_v.png" alt="">
+                        <div class="block__texts">
+                            <p class="block__title ff1"><span>L</span>’histoire de Kyoto</p>
+                            <p class="block__text">Nichée entre les montagnes au centre de l'ile d’Honshu, Kyoto fut la capitale japonaise de 794 à 1868. Elle est considérée comme la plus belle ville du japon, et ayant échappée aux bombes de la seconde guerre mondiale, elle possède encore de nombreux bâtiments d'avant guerre. </p>
+                            <div class="block__btn ff1">
+                                <a href="histoire/histoire.html">en savoir +</a>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="img/Sagano Bamboo Forest.jpg" alt="">
+                </div>
+                <div class="main__block">
+                    <img src="img/Kinkaku-ji.jpg" alt="">
+                    <div class="block__info right">
+                        <img src="img/red_v.png" alt="">
+                        <div class="block__texts">
+                            <p class="block__title ff1"><span>S</span>on patrimoine</p>
+                            <p class="block__text">Kyoto est considérée capitale culturelle du Japon avec près de 2 000 temples, ses sanctuaires et ses palais, ses ponts, ses jardins, son architecture et sa cuisine traditionnelle classée au patrimoine de l’UNESCO.   </p>
+                            <div class="block__btn ff1">
+                                <a href="patrimoine/patrimoine.html">aller plus loin</a>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <img src="img/Sagano Bamboo Forest.jpg" alt="">
             </div>
-            <div class="main__block">
-                <img src="img/Kinkaku-ji.jpg" alt="">
-                <div class="block__info right">
-                    <img src="img/red_v.png" alt="">
-                    <div class="block__texts">
-                        <p class="block__title ff1"><span>S</span>on patrimoine</p>
-                        <p class="block__text">Kyoto est considérée capitale culturelle du Japon avec près de 2 000 temples, ses sanctuaires et ses palais, ses ponts, ses jardins, son architecture et sa cuisine traditionnelle classée au patrimoine de l’UNESCO.   </p>
-                        <div class="block__btn ff1">
-                            <a href="patrimoine/patrimoine.html">aller plus loin</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
        </div>
     </main>
     <footer>
