@@ -43,7 +43,7 @@ main .main__content {
   display: flex;
   position: relative;
   width: 100%;
-  max-width: 1700px;
+  max-width: 1500px;
   margin: 0 auto;
 }
 
@@ -112,11 +112,11 @@ main .main__content {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  max-width: 1800px;
+  max-width: 1500px;
   margin: 0 auto 60px;
   width: 100%;
   position: relative;
-  margin-bottom: 200px; 
+  margin-bottom: 150px; 
 
 }
 

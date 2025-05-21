@@ -6,121 +6,143 @@
     <title>Kyoto</title>
     <link rel="stylesheet" href="main.css">
         <style>
-        body, html {
-          height: 100%;
-          margin: 0;
-        }
-        header {
-          /* The image used */
-          background-image: url("img/Kyoto.jpg");
-        
-          /* Full height */
-          height: 100%; 
-        
-          /* Center and scale the image nicely */
-          background-position: center;
-          background-repeat: no-repeat;
-          background-size: cover;
-        }
-        .header__logo{
-            z-index: 10000;
-        }
-        .header__title{
-            position: absolute;
-            top: 20%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            color: rgb(255, 255, 255);
-            font-size: 300px;
-            font-family: var(--f1);
-            text-align: center;
-        }
-        .mobile-title {
-          display: none;
-        }   
+            body, html {
+              height: 100%;
+              margin: 0;
+            }
+            header {
+              /* The image used */
+              background-image: url("img/Kyoto.jpg");
+            
+              /* Full height */
+              height: 100%; 
+            
+              /* Center and scale the image nicely */
+              background-position: center;
+              background-repeat: no-repeat;
+              background-size: cover;
+            }
+            .header__logo{
+                z-index: 10000;
+            }
+            .header__title{
+                position: absolute;
+                top: 20%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                color: rgb(255, 255, 255);
+                font-size: 300px;
+                font-family: var(--f1);
+                text-align: center;
+            }
+            .mobile-title {
+              display: none;
+            }   
 
-        @media screen and (max-width: 1400px) {
-          .header__title {
-            font-size: 240px;
-          }
-        }   
+            @media screen and (max-width: 1400px) {
+              .header__title {
+                font-size: 240px;
+              }
+            }   
 
-        @media screen and (max-width: 1024px) {
-          .header__title {
-            font-size: 180px;
-          }
-        }   
+            @media screen and (max-width: 1024px) {
+              .header__title {
+                font-size: 180px;
+              }
 
-        @media screen and (max-width: 768px) {
-          .header__title {
-            font-size: 120px;
-          }
-        }   
+            }   
 
-        @media screen and (max-width: 480px) {
-          .desktop-title {
-            display: none;
-          }
+            @media screen and (max-width: 768px) {
+                header{
+              background-image: url("img/Kyoto_t.jpg");
+                }
+                .header__title {
+                    font-size: 120px;
+                }
+                .desktop-title {
+                    display: none;
+                  }
+                  .mobile-title {
+                    display: flex;
+                    flex-direction: column;
+                    top: 50%;
+                    align-items: center;
+                    justify-content: center;
+                    letter-spacing: 10px;
+                    height: 70%;
+                  }
+              
+                  .mobile-title span {
+                    font-size: 80px;
+                    line-height: 1;
+                    margin-bottom: 5px;
+                  }
+            }   
 
-          .mobile-title {
-            display: flex;
-            flex-direction: column;
-            top: 50%;
-            align-items: center;
-            justify-content: center;
-            letter-spacing: 10px;
-            height: 70%;
-          }
+            @media screen and (max-width: 480px) {
+              .desktop-title {
+                display: none;
+              }
 
-          .mobile-title span {
-            font-size: 80px;
-            line-height: 1;
-            margin-bottom: 5px;
-          }
-        }
-        </style>
+              .mobile-title {
+                display: flex;
+                flex-direction: column;
+                top: 50%;
+                align-items: center;
+                justify-content: center;
+                letter-spacing: 10px;
+                height: 70%;
+              }
+
+              .mobile-title span {
+                font-size: 80px;
+                line-height: 1;
+                margin-bottom: 5px;
+              }
+            }
+    </style>
 </head>
 <body>
    <header>
-  <div class="header__main ff1">
-    <div class="header__menu">
-      <input type="checkbox" id="burger-toggle">
-      <label for="burger-toggle" class="burger-container">
-        <div class="burger-line"></div>
-        <div class="burger-line"></div>
-        <div class="burger-line"></div>
-      </label>
-      <span class="menu-label">Menu</span>
-      <nav class="nav-menu">
-        <ul>
-          <li><a class="active" href="#home">Accueil</a></li>
-          <li><a href="#about">Patrimoine de Kyoto</a></li>
-          <li><a href="#services">Histoire de Kyoto </a></li>
-          <li><a href="#portfolio">Itinéraires à thème</a></li>
-          <li><a href="#portfolio">Questions fréquentes</a></li>
-          <li><a href="#portfolio">Partager vos experiences à Kyoto</a></li>
-          <li><a href="#contact">Nous-contacter</a></li>
-        </ul>
-      </nav>
-      <a href="index.html" class="header__logo"><img src="img/logo.png" alt=""></a>
-      <div class="lang">
-        <button class="lang_btn"><p>Fr</p></button>
-        <div class="lang-content">
-          <a href="#">Fr</a>
-          <a href="#">En</a>
+      <div class="header__main ff1">
+        <div class="header__menu">
+          <input type="checkbox" id="burger-toggle">
+          <label for="burger-toggle" class="burger-container">
+            <div class="burger-line"></div>
+            <div class="burger-line"></div>
+            <div class="burger-line"></div>
+          </label>
+          <span class="menu-label">Menu</span>
+          <nav class="nav-menu">
+            <ul>
+              <li><a class="active" href="#home">Accueil</a></li>
+              <li><a href="#about">Patrimoine de Kyoto</a></li>
+              <li><a href="#services">Histoire de Kyoto </a></li>
+              <li><a href="#portfolio">Itinéraires à thème</a></li>
+              <li><a href="#portfolio">Questions fréquentes</a></li>
+              <li><a href="#portfolio">Partager vos experiences à Kyoto</a></li>
+              <li><a href="#contact">Nous-contacter</a></li>
+            </ul>
+          </nav>
+          <a href="index.html" class="header__logo"><img src="img/logo.png" alt=""></a>
+          <div class="lang">
+            <button class="lang_btn"><p>Fr</p></button>
+            <div class="lang-content">
+              <a href="#">Fr</a>
+              <a href="#">En</a>
+            </div>
+          </div>
+        </div>
+        <p class="header__title desktop-title">Kyoto</p>
+        <div class="header__title mobile-title">
+          <span>K</span>
+          <span>y</span>
+          <span>o</span>
+          <span>t</span>
+          <span>o</span>
         </div>
       </div>
-    </div>
-    <p class="header__title desktop-title">Kyoto</p>
-    <div class="header__title mobile-title">
-      <span>K</span>
-      <span>y</span>
-      <span>o</span>
-      <span>t</span>
-      <span>o</span>
-    </div>
-  </div>
-</header>
+    </header>
     <main>
        <div class="main__content">
             <div class="main__blocks">

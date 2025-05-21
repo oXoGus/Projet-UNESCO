@@ -6,26 +6,142 @@
     <title>Histoire</title>
     <link href="https://fonts.googleapis.com/css2?family=Finger+Paint&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="histoire.css">
+    <style>
+        body, html {
+          height: 100%;
+          margin: 0;
+        }
+        header {
+          /* The image used */
+          background-image: url("../img/histoire.jpg");
+        
+          /* Full height */
+          height: 100%; 
+        
+          /* Center and scale the image nicely */
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+        .header__logo{
+            z-index: 10000;
+        }
+        .header__title{
+          position: absolute;
+          top: 300px;
+          right: 300px;
+          color: rgb(0, 0, 0);
+          font-size: 10rem;
+          font-family: var(--f1);
+          text-align: center;
+        }
+        .mobile-title {
+          display: none;
+        }   
+
+        @media screen and (max-width: 1400px) {
+          .header__title {
+            font-size: 200px;
+          }
+        }   
+
+        @media screen and (max-width: 1024px) {
+          .header__title {
+            font-size: 100px;
+          }
+        }   
+
+        @media screen and (max-width: 768px) {
+            header{
+          background-image: url("../img/hitoire_t.jpg");
+            }
+            .header__title {
+                font-size: 80px;
+            }
+            .desktop-title {
+                display: none;
+              }
+              .mobile-title {
+                color: #fff;
+                display: flex;
+                flex-direction: column;
+                top: 20%;
+                left: 50%;
+                align-items: center;
+                justify-content: center;
+                letter-spacing: 10px;
+                height: 70%;
+              }
+          
+              .mobile-title span {
+                font-size: 100px;
+                line-height: 1;
+                margin-bottom: 5px;
+              }
+        }   
+
+        @media screen and (max-width: 480px) {
+          .desktop-title {
+            display: none;
+          }
+          .mobile-title {
+            display: flex;
+            flex-direction: column;
+            top: 20%;
+            left: 50%;
+            align-items: center;
+            justify-content: center;
+            letter-spacing: 10px;
+            height: 70%;
+          }
+          .mobile-title span {
+            font-size: 100px;
+            line-height: 1;
+            margin-bottom: 5px;
+          }
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <div class="header__main ff1">
-
-            <div class="header__menu">
-                <a href="../index.html"><img class="header__logo" src="../img/logo.png" alt=""></a>
-                <ul class="menu__lists">
-                    <li class="menu__list" style="color: #2F0711;"><a style="color: #2F0711;" href="histoire.html">Histoire</a></li>
-                    <li class="menu__list"><a href="../patrimoine/patrimoine.html">Patrimoine</a></li>
-                    <li class="menu__list">Langue ▾</li>
-                </ul>
+   <header>
+      <div class="header__main ff1">
+        <div class="header__menu">
+          <input type="checkbox" id="burger-toggle">
+          <label for="burger-toggle" class="burger-container">
+            <div class="burger-line"></div>
+            <div class="burger-line"></div>
+            <div class="burger-line"></div>
+          </label>
+          <span class="menu-label">Menu</span>
+          <nav class="nav-menu">
+            <ul>
+              <li><a href="#home">Accueil</a></li>
+              <li><a href="#about">Patrimoine de Kyoto</a></li>
+              <li><a class="active" href="#services">Histoire de Kyoto </a></li>
+              <li><a href="#portfolio">Itinéraires à thème</a></li>
+              <li><a href="#portfolio">Questions fréquentes</a></li>
+              <li><a href="#portfolio">Partager vos experiences à Kyoto</a></li>
+              <li><a href="#contact">Nous-contacter</a></li>
+            </ul>
+          </nav>
+          <a href="index.html" class="header__logo"><img src="img/logo.png" alt=""></a>
+          <div class="lang">
+            <button class="lang_btn"><p>Fr</p></button>
+            <div class="lang-content">
+              <a href="#">Fr</a>
+              <a href="#">En</a>
             </div>
+          </div>
         </div>
+        <p class="header__title desktop-title">Son <br>histoire</p>
+        <div class="header__title mobile-title">
+          <span>Son</span>
+          <span>histoire</span>
+        </div>
+      </div>
     </header>
     <main>
         <div class="main__header">
-            <div class="main__header_title ff1">
-                L’Histoire de Kyoto
-            </div> 
             <div class="main__header_text">
                 Nichée entre les montagnes dans le centre de l'ile de Honshu, Kyoto fut la capitale de 794 à 1868 lors de la restauration Maiji ou la capitale fut transférée à Tokyo. Elle est considérée comme la plus belle ville du Japon. De plus, ayant échappé aux bombardements de la seconde guerre mondiale, elle possède encore de nombreux bâtiments d'avant guerre telle que les mashiyas, maison traditionnelle.            </div>
         </div>
