@@ -9,6 +9,7 @@ main{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-family: var(--f1);
 }
 .main__header{
     display: flex;
