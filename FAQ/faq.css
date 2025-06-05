@@ -159,7 +159,7 @@ main {
             .section-header::before {
                 margin-left: 15px;
                 margin-right: 8px;
-                font-size: 16px;
+                font-size: 15px;
             }
             
             .section-title {
@@ -195,7 +195,7 @@ main {
             }
             
             .section-title {
-                font-size: 24px;
+                font-size: 14px;
                 padding: 5px 40px;
                 text-align: center;
             }
@@ -205,7 +205,7 @@ main {
             }
             
             .question {
-                font-size: 18px;
+                font-size: 14px;
                 margin-bottom: 8px;
             }
             
@@ -221,7 +221,7 @@ main {
             }
             
             .section-title {
-                font-size: 20px;
+                font-size: 12px;
                 padding: 4px 30px;
             }
             
@@ -230,22 +230,22 @@ main {
             }
             
             .question {
-                font-size: 16px;
+                font-size: 12px;
             }
             
             .answer {
-                font-size: 13px;
+                font-size: 12px;
             }
         }
 
         @media (max-width: 360px) {
             .section-title {
-                font-size: 16px;
+                font-size: 12px;
                 padding: 3px 20px;
             }
             
             .question {
-                font-size: 14px;
+                font-size: 12px;
             }
             
             .answer {
