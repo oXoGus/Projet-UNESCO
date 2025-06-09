@@ -19,16 +19,15 @@
               <span class="menu-label">Menu</span>
               <nav class="nav-menu">
                 <ul>
-                  <li><a href="#home">Accueil</a></li>
-                  <li><a  class="active" href="#about">Patrimoine de Kyoto</a></li>
-                  <li><a href="#services">Histoire de Kyoto </a></li>
-                  <li><a href="#portfolio">Itinéraires à thème</a></li>
-                  <li><a href="#portfolio">Questions fréquentes</a></li>
-                  <li><a href="#portfolio">Partager vos experiences à Kyoto</a></li>
-                  <li><a href="#contact">Nous-contacter</a></li>
+                    <li><a href="index.php">Accueil</a></li>
+                    <li><a class="active" href="patrimoine.php">Patrimoine de Kyoto</a></li>
+                    <li><a href="histoire.php">Histoire de Kyoto </a></li>
+                    <li><a href="itineraire.php">Itinéraires à thème</a></li>
+                    <li><a href="faq.php">Questions fréquentes</a></li>
+                    <li><a href="contacter.php">Nous-contacter</a></li>
                 </ul>
               </nav>
-              <a href="index.html" class="header__logo"><img src="img/patrimoine/logo.png" alt=""></a>
+              <a href="index.html" class="header__logo"><img src="img/logo.png" alt=""></a>
               <div class="lang">
                 <button class="lang_btn"><p>Fr</p></button>
                 <div class="lang-content">
@@ -60,7 +59,7 @@
                     <a href="https://maps.app.goo.gl/NbQ8nbL7qT953wxY8" class="block__link">Voir sur Google Maps.</a>
                   </div>
                 </div>
-                <img src="img/black_figure.png" alt="">
+                <img src="img/patrimoine/black_figure.png" alt="">
                 <div class="content__block bg2">
                     <div class="block__info">
                         <h2 class="block__title ff1">Taizo-in</h2>

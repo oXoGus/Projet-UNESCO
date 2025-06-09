@@ -84,13 +84,13 @@
     transition: all 0.4s ease-in-out;
   }
   .burger-line:nth-child(1){
-    background: url(img/line3.svg) 0 0/100% 100% no-repeat;
+    background: url(../../img/blocks/line3.svg) 0 0/100% 100% no-repeat;
   }
   .burger-line:nth-child(2){
-    background: url(img/line2.svg) 0 0/100% 100% no-repeat;
+    background: url(../../img/blocks/line2.svg) 0 0/100% 100% no-repeat;
   }
   .burger-line:nth-child(3){
-    background: url(img/line3.svg) 0 0/100% 100% no-repeat;
+    background: url(../../img/blocks/line3.svg) 0 0/100% 100% no-repeat;
   }
   #burger-toggle {
     display: none;

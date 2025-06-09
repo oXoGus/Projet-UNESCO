@@ -48,7 +48,7 @@ main{
 }
 .content__header .content__header_title{
     color: #FFF;
-    background: url(img/Group.png) 0 0/100% 100% no-repeat;
+    background: url(../img/histoire/Group.png) 0 0/100% 100% no-repeat;
     text-align: center;
     padding: 0 200px 0 40px;
     margin: 0;
@@ -94,7 +94,7 @@ main{
     margin-bottom: 50px;
 }
 .block__title{
-    background: url(img/red_left.png) 0 0/100% 100% no-repeat;
+    background: url(../img/histoire/red_left.png) 0 0/100% 100% no-repeat;
     font-size: 48px;
     padding: 0 100px 0 10px;
     margin: 0 0 10px 0;
@@ -107,7 +107,7 @@ main{
     width: 450px;
 }
 .right{
-    background: url(img/red_right.png) 0 0/100% 100% no-repeat;
+    background: url(../img/histoire/red_right.png) 0 0/100% 100% no-repeat;
     text-align: right;
     padding: 0 10px 0 100px;
 }
@@ -132,7 +132,7 @@ main{
     width: 450px;
 }
 .block__title{
-    background: url(img/red_left.png) 0 0/100% 100% no-repeat;
+    background: url(../img/histoire/red_left.png) 0 0/100% 100% no-repeat;
     font-size: 28px;
     padding: 0 100px 0 10px;
     margin: 0 0 10px 0;
@@ -198,7 +198,7 @@ main{
   }
   
   .right {
-    background: url(img/red_left.png) 0 0/100% 100% no-repeat; 
+    background: url(../img/histoire/red_left.png) 0 0/100% 100% no-repeat; 
     text-align: left;
     padding: 5px 50px 5px 10px;
   }

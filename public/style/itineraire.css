@@ -40,7 +40,7 @@ main{
     margin: 0 auto;
 }
 .tag {
-  background: url(img/tag.svg) 0 0/100% 100% no-repeat;
+  background: url(../img/itineraire/tag.svg) 0 0/100% 100% no-repeat;
   color: white;
   padding: 0.5rem 2.2rem;
   font-size: 1rem;
@@ -64,7 +64,7 @@ main{
     align-items: center;
 }
 .content__title{
-    background: url(img/red_line.png) 0 0/100% 100% no-repeat;
+    background: url(../img/itineraire/red_line.png) 0 0/100% 100% no-repeat;
     font-size: 45px;
     padding: 0 20% 0 10px;
     color: #FFF1F4;

@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Finger+Paint&family=Shippori+Antique&display=swap');
-@import url(../blocks/menu.css);
+@import url(menu.css);
 :root{
     /*font*/
     --f1: "Finger Paint", serif;
@@ -108,7 +108,7 @@ header{
 
 @media (max-width: 1150px) {
     header{
-        background: url(img/header_bar.png) 0 0/150% 100% no-repeat;        
+        background: url(../../img/blocks/header_bar.png) 0 0/150% 100% no-repeat;        
     }
 }
 
@@ -118,7 +118,7 @@ header{
 @media (max-width: 768px) {
     header{
         background: none;
-        border-bottom-style: url(../blocks/img/under-line.svg) 0 0/100% 100% no-repeat;
+        border-bottom-style: url(../../img/blocks//under-line.svg) 0 0/100% 100% no-repeat;
     }
     .header__menu input{
         display: block;

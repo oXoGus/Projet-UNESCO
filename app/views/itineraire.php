@@ -27,7 +27,7 @@
                   <li><a href="contacter.php">Nous-contacter</a></li>
                 </ul>
               </nav>
-              <a href="index.php" class="header__logo"><img src="img/itineraire/logo.png" alt=""></a>
+              <a href="index.php" class="header__logo"><img src="img/logo.png" alt=""></a>
               <div class="lang">
                 <button class="lang_btn"><p>Fr</p></button>
                 <div class="lang-content">

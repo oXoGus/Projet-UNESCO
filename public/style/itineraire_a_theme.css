@@ -49,7 +49,7 @@ main{
 }
 .content__header .content__header_title{
     color: #FFF;
-    background: url(img/Group.png) 0 0/100% 100% no-repeat;
+    background: url(../img/itineraire_a_theme/Group.png) 0 0/100% 100% no-repeat;
     text-align: center;
     padding: 0 200px 0 40px;
     margin: 0;
@@ -59,64 +59,64 @@ main{
 }
 
 .timeline-card {
-            border-radius: 20px;
-            padding: 40px 30px;
-            margin: 20px auto;
-            max-width: 1000px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-            position: relative;
-        }
+    border-radius: 20px;
+    padding: 40px 30px;
+    margin: 20px auto;
+    max-width: 1000px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    position: relative;
+}
 
-        .timeline-header {
-            text-align: center;
-            margin-bottom: 30px;
-        }
+.timeline-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
 
-        .period-info {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            font-size: 16px;
-            color: red;
-            margin-bottom: 20px;
-            flex-wrap: wrap;
-            gap: 10px;
-        }
+.period-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    color: red;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    gap: 10px;
+}
 
-        .period-info span {
-            background: #f0f0f0;
-            padding: 5px 12px;
-            border-radius: 15px;
-        }
+.period-info span {
+    background: #f0f0f0;
+    padding: 5px 12px;
+    border-radius: 15px;
+}
 
 
-        .tags {
-            display: flex;
-            justify-content: center;
-            gap: 10px;
-            margin: 25px 0;
-            flex-wrap: wrap;
-        }
+.tags {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 25px 0;
+    flex-wrap: wrap;
+}
 
-        .tag {
-            background: url(img/tag.svg) 0 0/100% 100% no-repeat;
-            color: white;
-            padding: 8px 16px;
-            border-radius: 20px;
-            font-size: 20px;
-            font-weight: 500;
-        }
+.tag {
+    background: url(../img/itineraire_a_theme/tag.svg) 0 0/100% 100% no-repeat;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: 500;
+}
 
-        .tag.spiritualite { background: url(img/tag.svg) 0 0/100% 100% no-repeat; font-size: 20px;}
-        .tag.photo { background:  url(img/tag.svg)0 0/100% 100% no-repeat; font-size: 20px;  }
-        .tag.nature { background:  url(img/tag.svg)0 0/100% 100% no-repeat; font-size: 20px; }
-         .tags {
-            display: flex;
-            justify-content: center;
-            gap: 10px;
-            margin: 25px 0;
-            flex-wrap: wrap;
-        }
+.tag.spiritualite { background: url(../img/itineraire_a_theme/tag.svg) 0 0/100% 100% no-repeat; font-size: 20px;}
+.tag.photo { background:  url(../img/itineraire_a_theme/tag.svg)0 0/100% 100% no-repeat; font-size: 20px;  }
+.tag.nature { background:  url(../img/itineraire_a_theme/tag.svg)0 0/100% 100% no-repeat; font-size: 20px; }
+.tags {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 25px 0;
+    flex-wrap: wrap;
+}
         
 
 .content__blocks{
@@ -171,7 +171,7 @@ main{
     width: 450px;
 }
 .right{
-    background: url(img/red_right.png) 0 0/100% 100% no-repeat;
+    background: url(../img/histoire/red_right.png) 0 0/100% 100% no-repeat;
     text-align: right;
     padding: 0 10px 0 100px;
 }
@@ -196,7 +196,7 @@ main{
     width: 450px;
 }
 .block__title{
-    background: url(img/red_left.png) 0 0/100% 100% no-repeat;
+    background: url(../img/histoire/red_left.png) 0 0/100% 100% no-repeat;
     font-size: 28px;
     padding: 0 100px 0 10px;
     margin: 0 0 10px 0;

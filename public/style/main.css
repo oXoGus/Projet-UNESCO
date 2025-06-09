@@ -1,5 +1,6 @@
 @import url(blocks/header.css);
 @import url(blocks/footer.css);
+
 :root {
   /*font*/
   --f1: "Finger Paint", serif;
@@ -67,7 +68,7 @@ main .main__content {
 }
 
 .block1 .block__info {
-  background: url(img/green.png) 0 0/100% 100% no-repeat;
+  background: url(../img/green.png) 0 0/100% 100% no-repeat;
   padding: 20px 5%;
   font-size: clamp(16px, 2vw, 22px); 
   width: 50%;
@@ -91,7 +92,7 @@ main .main__content {
 }
 
 .block2 .block__info {
-  background: url(img/grey.png) 0 0/100% 100% no-repeat;
+  background: url(../img/grey.png) 0 0/100% 100% no-repeat;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -163,7 +164,7 @@ main .main__content {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url(img/red_h.png) 0 0/100% 100% no-repeat;
+  background: url(../img/red_h.png) 0 0/100% 100% no-repeat;
   color: var(--ct1);
   width: 100%;
   max-width: 400px;

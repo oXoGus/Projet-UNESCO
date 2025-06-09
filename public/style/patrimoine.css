@@ -38,7 +38,7 @@ main{
     align-items: center;
 }
 .content__title{
-    background: url(img/red_line.png) 0 0/100% 100% no-repeat;
+    background: url(../img/patrimoine/red_line.png) 0 0/100% 100% no-repeat;
     font-size: 45px;
     padding: 0 20% 0 10px;
     color: #FFF1F4;
