@@ -1,0 +1,251 @@
+@import url(blocks/header.css);
+@import url(blocks/footer.css);
+
+
+
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.main__header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+}
+.main__header_title{
+    font-size: 70px;
+    text-align: center;
+}
+.main__header img{
+    margin: 30px 0;
+}
+.main__header_text{
+    font-size: 24px;
+    text-align: center;
+    width: 70%;
+}
+
+.main__content{
+    margin: 30px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.content__title{
+    background: url(img/red_line.png) 0 0/100% 100% no-repeat;
+    font-size: 45px;
+    padding: 0 20% 0 10px;
+    color: #FFF1F4;
+    margin-bottom: 100px;
+}
+
+.content__blocks{
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+    width: 100%;
+}
+.content__blocks img{
+    margin: 40px 0;
+}
+
+
+.content__block {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  background: #FFF5F7;
+  width: 100%;
+  min-height: 500px;
+  max-height: 1200px;
+}
+.bg2{
+    background: #FFECE5;
+}
+.block__img {
+  width: 50%;
+  overflow: hidden;
+  position: relative;
+}
+
+.block__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.block__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 48%;
+  padding: 2% 4%;
+  box-sizing: border-box;
+}
+
+.block__title {
+  font-family: var(--f1, sans-serif);
+  font-size: 4rem;
+  color: #4C1414;
+  margin: 0 0 1.5rem 0;
+  font-weight: 600;
+}
+
+.block__text {
+  font-size: 2rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  color: #000;
+}
+
+.block__link {
+  color: #000;
+  text-decoration: underline;
+  font-size: 1.1rem;
+  align-self: flex-start;
+}
+
+
+/* ----------------------------------------------
+                    Adaptive
+------------------------------------------------- */
+
+@media (max-width: 1280px) {
+    .block__img img{
+        max-width: 100%
+    }
+}
+
+@media screen and (max-width: 992px) {
+  .block__title {
+    font-size: 2.8rem;
+  }
+  
+  .block__text {
+    font-size: 1.1rem;
+  }
+}
+
+/* Адаптивність для мобільних */
+@media screen and (max-width: 768px) {
+  .content__block {
+    flex-direction: column;
+  }
+  
+  .block__img, .block__info {
+    width: 100%;
+  }
+  
+  .block__img {
+    height: 300px;
+  }
+  
+  .block__title {
+    font-size: 2.5rem;
+    margin-top: 1.5rem;
+  }
+}
+
+body, html {
+  height: 100%;
+  margin: 0;
+}
+header {
+  /* The image used */
+  background-image: url("../img/Byōdō-in.jpg");
+
+  /* Full height */
+  height: 100%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.header__logo{
+    z-index: 10000;
+}
+.header__title{
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: rgb(255, 255, 255);
+  font-size: 100px;
+  font-family: var(--f1);
+}
+.mobile-title {
+  display: none;
+}   
+
+@media screen and (max-width: 1400px) {
+  .header__title {
+    font-size: 100px;
+  }
+}   
+
+@media screen and (max-width: 1024px) {
+  .header__title {
+    font-size: 60px;
+  }
+  
+}   
+
+@media screen and (max-width: 768px) {
+    header{
+  background-image: url("../img/patrimoine_t.jpg");
+    }
+    .header__title {
+        font-size: 50px;
+    }
+    .desktop-title {
+        display: none;
+      }
+      .mobile-title {
+        display: flex;
+        flex-direction: column;
+        top: 50%;
+        align-items: center;
+        justify-content: center;
+        letter-spacing: 10px;
+        height: 70%;
+      }
+  
+      .mobile-title span {
+        font-size: 50px;
+        line-height: 1;
+        margin-bottom: 5px;
+      }
+}   
+
+@media screen and (max-width: 480px) {
+  .desktop-title {
+    display: none;
+  }
+
+  .mobile-title {
+    display: flex;
+    flex-direction: column;
+    top: 50%;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 10px;
+    height: 70%;
+  }
+
+  .mobile-title span {
+    font-size: 50px;
+    line-height: 1;
+    margin-bottom: 5px;
+  }
+}

@@ -1,0 +1,277 @@
+@import url(blocks/header.css);
+@import url(blocks/footer.css);
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.main__header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+}
+
+.main__header_title {
+    font-size: 70px;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.main__header_text {
+    font-size: 24px;
+    text-align: left;
+    padding: 20px 0;
+}
+
+/* Team Section */
+.team-section {
+    width: 100%;
+    margin: 40px 0;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    margin-bottom: 60px;
+}
+
+.team-member {
+    padding: 30px 20px 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.team-member:hover {
+    transform: translateY(-5px);
+}
+
+.member-avatar {
+    width: 200px;
+    height: auto;
+    margin: 0 auto 20px;
+    object-fit: contain;
+    display: block;
+}
+
+.member-name {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #2c3e50;
+}
+
+.member-role {
+    font-size: 16px;
+    color: #7f8c8d;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-link {
+    width: 55px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+
+.social-link img{
+    width: 40px;
+    height: 40px;
+    margin-right: 5px;
+    margin-left: 5px;;
+}
+
+/* University Section */
+.university-section {
+    width: 100%;
+    text-align: center;
+    margin: 40px 0;
+}
+
+.university-title {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #2c3e50;
+}
+
+.map-container {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 150px;
+}
+
+
+.university-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.university-logos img{
+    width: 500px;
+    margin: 0 10px;
+
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    main {
+        padding: 0 20px;
+    }
+
+    .main__header_title {
+        font-size: 48px;
+    }
+
+    .main__header_text {
+        font-size: 18px;
+    }
+
+    .team-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .university-title {
+        font-size: 36px;        
+    }
+
+    .university-logos {
+        flex-direction: column;
+    }
+
+    .university-logos img {
+        width: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+    .main__header_title {
+        font-size: 36px;
+    }
+
+    .main__header_text {
+        font-size: 16px;
+    }
+
+    .member-name {
+        font-size: 20px;
+    }
+
+    .university-title {
+        font-size: 28px;
+    }
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+  }
+  header {
+    /* The image used */
+    background-image: url("../img/contacter.jpg");
+  
+    /* Full height */
+    height: 100%; 
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .header__logo{
+      z-index: 10000;
+  }
+  .header__title{
+      position: absolute;
+      top: 20%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: rgb(255, 255, 255);
+      font-size: 150px;
+      font-family: var(--f1);
+      text-align: center;
+  }
+  .mobile-title {
+    display: none;
+  }   
+
+  @media screen and (max-width: 1400px) {
+    .header__title {
+      font-size: 240px;
+    }
+  }   
+
+  @media screen and (max-width: 1024px) {
+    .header__title {
+      font-size: 180px;
+    }
+
+  }   
+
+  @media screen and (max-width: 768px) {
+      .header__title {
+          font-size: 120px;
+      }
+      .desktop-title {
+          display: none;
+        }
+        .mobile-title {
+          display: flex;
+          flex-direction: column;
+          top: 50%;
+          align-items: center;
+          justify-content: center;
+          letter-spacing: 10px;
+          height: 70%;
+        }
+    
+        .mobile-title span {
+          font-size: 80px;
+          line-height: 1;
+          margin-bottom: 5px;
+        }
+  }   
+
+  @media screen and (max-width: 480px) {
+    .desktop-title {
+      display: none;
+    }
+
+    .mobile-title {
+      display: flex;
+      flex-direction: column;
+      top: 50%;
+      align-items: center;
+      justify-content: center;
+      letter-spacing: 10px;
+      height: 70%;
+    }
+
+    .mobile-title span {
+      font-size: 80px;
+      line-height: 1;
+      margin-bottom: 5px;
+    }
+  }
