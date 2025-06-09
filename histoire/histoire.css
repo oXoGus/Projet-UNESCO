@@ -57,6 +57,7 @@ main{
     left: 40px;
 }
 
+
 .content__blocks{
       display: flex;
   justify-content: center;
@@ -171,7 +172,7 @@ main{
     left: 0;
     top: 0;
     bottom: 0;
-    width: 100px; /* Ширина вертикальної смуги */
+    width: 100px; 
     height: 100%;
     margin: 0;
   }
@@ -179,7 +180,7 @@ main{
   .blocks__left, .blocks__right {
     width: 90%;
     padding-top: 40px;
-    padding-left: 20px; /* Відступ від вертикальної смуги */
+    padding-left: 20px; 
   }
   
   .blocks__right {
@@ -197,7 +198,7 @@ main{
   }
   
   .right {
-    background: url(img/red_left.png) 0 0/100% 100% no-repeat; /* Використовуємо ту ж картинку для заголовків */
+    background: url(img/red_left.png) 0 0/100% 100% no-repeat; 
     text-align: left;
     padding: 5px 50px 5px 10px;
   }
