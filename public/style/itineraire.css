@@ -150,6 +150,44 @@ main{
   margin-bottom: 2rem;
   flex-wrap: wrap;
 }
+.block__buttons {
+    margin-top: auto;
+}
+
+.block__button {
+    display: inline-block;
+    background: #DC143C !important; /* Rouge comme le titre */
+    color: #FFFFFF !important; /* Texte blanc */
+    padding: 15px 30px;
+    border-radius: 25px; /* Coins arrondis */
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(220, 20, 60, 0.3);
+    z-index: 10;
+}
+
+.block__button:hover {
+    background: #B91C3C !important;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(220, 20, 60, 0.4);
+    color: #FFFFFF !important;
+}
+
+.block__button:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(220, 20, 60, 0.3);
+}
+
+/* Style alternatif si vous voulez un bouton encore plus visible */
+.block__button--alt {
+    background: linear-gradient(135deg, #DC143C 0%, #B91C3C 100%) !important;
+    border: 2px solid #FFFFFF;
+    box-shadow: 0 4px 12px rgba(220, 20, 60, 0.4);
+}
 
 
 

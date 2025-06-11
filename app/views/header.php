@@ -11,7 +11,7 @@
     <header>
         <div class="header__main ff1">
             <div class="header__menu">
-                <a href=""><img class="header__logo" src="img/blocks/logo.png" alt=""></a>
+                <a href=""><img class="header__logo" src="img/blocks/logo.svg" alt=""></a>
                 <ul class="menu__lists">
                     <li class="menu__list"><a href="">Histoire</a></li>
                     <li class="menu__list"><a href="">Patrimoine</a></li>

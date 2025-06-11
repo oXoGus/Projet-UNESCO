@@ -1,6 +1,8 @@
 @import url(blocks/header.css);
 @import url(blocks/footer.css);
 
+
+
 main{
     display: flex;
     flex-direction: column;
@@ -59,7 +61,7 @@ main{
 
 
 .content__blocks{
-      display: flex;
+  display: flex;
   justify-content: center;
   align-items: stretch;
   margin-bottom: 100px;
@@ -71,10 +73,9 @@ main{
     padding-top: 80px;
     display: flex;
     flex-direction: column;
-    z-index: 100;
 }
 .blocks__left img{
-    max-width: 500px;
+    max-width: 400px;
     margin-bottom: 40px;
 }
 .blocks__right{
@@ -82,7 +83,7 @@ main{
     left: 50px;
 }
 .blocks__right img{
-    max-width: 500px;
+    max-width: 400px;
     margin-bottom: 40px;
 }
 
@@ -115,44 +116,94 @@ main{
     text-align: right;
 }
 
-@media screen and (max-width: 1280px) {
 
+.anecdote__blocks{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 100px;
+  width: 100%;
+  position: relative;
+  font-family: var(--f1);
+}
+.anecdote__header{
+  display: flex;
+  margin-bottom: 50px;
+}
+.anecdote__header img{
+  max-width: 350px;
+}
+.anecdote__block{
+  background: #FFE1E8;
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+}
+.anecdote__title{
+  margin-bottom: 40px;
+}
+.anecdote__text{
+  font-size: 20px;
+}
+
+@media screen and (max-width: 1280px) {
+.blocks__center{
+  width: 100px;
+}
 .blocks__left img{
-    max-width: 350px;
+    max-width: 300px;
     margin-bottom: 40px;
 }
 
 .blocks__right img{
-    max-width: 350px;
+    max-width: 300px;
     margin-bottom: 40px;
 }
 .block__text{
     font-size: 18px;
     text-align: left;
-    width: 450px;
+    width: 400px;
 }
 .block__title{
-    background: url(../img/histoire/red_left.png) 0 0/100% 100% no-repeat;
-    font-size: 28px;
-    padding: 0 100px 0 10px;
+  font-size: 20px;
+    padding: 0 50px 0 10px;
     margin: 0 0 10px 0;
     color: #FFF;
-    width: 100%;
+}
+.right{
+    text-align: right;
+    font-size: 20px;
+    padding: 0 10px 0 50px;
 }
 
 }
 
 @media screen and (max-width: 968px) {
+  .main__header_text{
+    font-size: 20px;
+    padding: 10px;
+  }
+  .blocks__center{
+    width: 70px;
+  }
   .blocks__left, .blocks__right {
-    width: 45%;
+    width: 35%;
   }
   
   .block__title {
-    font-size: 36px;
+    font-size: 20px;
   }
   
   .block__text {
-    font-size: 16px;
+    font-size: 15px;
+    width: 100%;
+  }
+  .anecdote__title{
+    font-size: 20px;
+  }
+  .anecdote__text{
+    font-size: 15px;
   }
 }
 
@@ -172,7 +223,7 @@ main{
     left: 0;
     top: 0;
     bottom: 0;
-    width: 100px; 
+    width: 80px; 
     height: 100%;
     margin: 0;
   }
@@ -213,7 +264,22 @@ main{
     width: 90%;
     margin-bottom: 30px;
   }
+  .anecdote__header img{
+    width: 150px;
+  }
+  .anecdote__title{
+    font-size: 15px;
+  }
+  .anecdote__text{
+    font-size: 12px;
+  }
 }
+
+
+
+
+
+
 body, html {
   height: 100%;
   margin: 0;
@@ -231,7 +297,7 @@ header {
   background-size: cover;
 }
 .header__logo{
-    z-index: 10000;
+    z-index: 100;
 }
 .header__title{
   position: absolute;
@@ -248,13 +314,14 @@ header {
 
 @media screen and (max-width: 1400px) {
   .header__title {
-    font-size: 200px;
+    font-size: 100px;
   }
 }   
 
 @media screen and (max-width: 1024px) {
   .header__title {
     font-size: 100px;
+    right: 150px;
   }
 }   
 
@@ -263,7 +330,8 @@ header {
   background-image: url("../img/hitoire_t.jpg");
     }
     .header__title {
-        font-size: 80px;
+        font-size: 60px;
+        right: 40%;
     }
     .desktop-title {
         display: none;
@@ -281,7 +349,7 @@ header {
       }
   
       .mobile-title span {
-        font-size: 100px;
+        font-size: 80px;
         line-height: 1;
         margin-bottom: 5px;
       }
@@ -302,7 +370,7 @@ header {
     height: 70%;
   }
   .mobile-title span {
-    font-size: 100px;
+    font-size: 50px;
     line-height: 1;
     margin-bottom: 5px;
   }

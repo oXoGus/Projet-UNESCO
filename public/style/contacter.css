@@ -190,7 +190,7 @@ body, html {
   }
   header {
     /* The image used */
-    background-image: url("../img/contacter.jpg");
+    background-image: url("../img/contacter/header.jpg");
   
     /* Full height */
     height: 100%; 
@@ -201,7 +201,7 @@ body, html {
     background-size: cover;
   }
   .header__logo{
-      z-index: 10000;
+      z-index: 100;
   }
   .header__title{
       position: absolute;
@@ -219,20 +219,21 @@ body, html {
 
   @media screen and (max-width: 1400px) {
     .header__title {
-      font-size: 240px;
+      font-size: 120px;
+      top: 50%;
     }
   }   
 
   @media screen and (max-width: 1024px) {
     .header__title {
-      font-size: 180px;
+      font-size: 100px;
     }
 
   }   
 
   @media screen and (max-width: 768px) {
       .header__title {
-          font-size: 120px;
+          font-size: 50px;
       }
       .desktop-title {
           display: none;
@@ -240,15 +241,16 @@ body, html {
         .mobile-title {
           display: flex;
           flex-direction: column;
-          top: 50%;
+          top: 40%;
           align-items: center;
           justify-content: center;
           letter-spacing: 10px;
           height: 70%;
+          font-size: 50px;
         }
     
         .mobile-title span {
-          font-size: 80px;
+          font-size: 70px;
           line-height: 1;
           margin-bottom: 5px;
         }
@@ -258,19 +260,18 @@ body, html {
     .desktop-title {
       display: none;
     }
-
     .mobile-title {
       display: flex;
       flex-direction: column;
-      top: 50%;
+      top: 40%;
       align-items: center;
       justify-content: center;
-      letter-spacing: 10px;
+      letter-spacing: 5px;
       height: 70%;
     }
 
     .mobile-title span {
-      font-size: 80px;
+      font-size: 50px;
       line-height: 1;
       margin-bottom: 5px;
     }

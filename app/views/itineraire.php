@@ -27,7 +27,7 @@
                   <li><a href="contacter.php">Nous-contacter</a></li>
                 </ul>
               </nav>
-              <a href="index.php" class="header__logo"><img src="img/logo.png" alt=""></a>
+              <a href="index.php" class="header__logo"><img src="img/logo.svg" alt=""></a>
               <div class="lang">
                 <button class="lang_btn"><p>Fr</p></button>
                 <div class="lang-content">
@@ -83,6 +83,9 @@
                           <span class="tag">SeniorFriendly</span>
                           <span class="tag">Photo</span>
                       </div>
+                      <div class="block__buttons">
+                          <a href="itineraire_a_theme.php" class="block__button">Voir le itinéraire</a>
+                      </div>
                   </div>
                 </div>
                 <img src="img/itineraire/black_figure.png" alt="">
@@ -101,6 +104,9 @@
                       <div class="block__tags">
                           <span class="tag">SeniorFriendly</span>
                           <span class="tag">Photo</span>
+                      </div>
+                      <div class="block__buttons">
+                          <a href="itineraire_a_theme.php" class="block__button">Voir le itinéraire</a>
                       </div>
                   </div>
                 </div>
@@ -121,6 +127,9 @@
                           <span class="tag">SeniorFriendly</span>
                           <span class="tag">Photo</span>
                       </div>
+                      <div class="block__buttons">
+                          <a href="itineraire_a_theme.php" class="block__button">Voir le itinéraire</a>
+                      </div>
                   </div>
                 </div>
                 <img src="img/itineraire/black_figure.png" alt="">
@@ -139,6 +148,9 @@
                       <div class="block__tags">
                           <span class="tag">SeniorFriendly</span>
                           <span class="tag">Photo</span>
+                      </div>
+                      <div class="block__buttons">
+                          <a href="itineraire_a_theme.php" class="block__button">Voir le itinéraire</a>
                       </div>
                   </div>
                 </div>
@@ -159,6 +171,9 @@
                           <span class="tag">SeniorFriendly</span>
                           <span class="tag">Photo</span>
                       </div>
+                      <div class="block__buttons">
+                          <a href="itineraire_a_theme.php" class="block__button">Voir le itinéraire</a>
+                      </div>
                   </div>
                 </div>
                 <img src="img/itineraire/black_figure.png" alt="">
@@ -177,6 +192,9 @@
                       <div class="block__tags">
                           <span class="tag">SeniorFriendly</span>
                           <span class="tag">Photo</span>
+                      </div>
+                      <div class="block__buttons">
+                          <a href="itineraire_a_theme.php" class="block__button">Voir le itinéraire</a>
                       </div>
                   </div>
                 </div>
@@ -197,6 +215,9 @@
                           <span class="tag">SeniorFriendly</span>
                           <span class="tag">Photo</span>
                       </div>
+                      <div class="block__buttons">
+                          <a href="itineraire_a_theme.php" class="block__button">Voir le itinéraire</a>
+                      </div>
                   </div>
                 </div>
             </div>
@@ -208,10 +229,9 @@
             <!-- ////////////////////////////////////////////////////////////////////////////////// -->
     <footer>
         <div class="footer__lists ff1">
-            <a href="" class="footer__lst">À propos de nous</a>
-            <img src="img/MCN.png" alt="" class="footer__lst">
-            <img src="img/UNESCO.png" alt="" class="footer__lst">
-            <a href="" class="footer__lst">Contactez nous</a>
+            <img src="img/MCN.svg" alt="" class="footer__lst">
+            <img src="img/UNESCO.svg" alt="" class="footer__lst">
+            <a href="contacter.php" class="footer__lst">Contactez nous</a>
         </div>
     </footer>
 </body>

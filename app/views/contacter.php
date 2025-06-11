@@ -27,7 +27,7 @@
               <li><a class="active" href="contacter.php">Nous-contacter</a></li>
             </ul>
           </nav>
-          <a href="index.php" class="header__logo"><img src="img/logo.png" alt=""></a>
+          <a href="index.php" class="header__logo"><img src="img/logo.svg" alt=""></a>
           <div class="lang">
             <button class="lang_btn"><p>Fr</p></button>
             <div class="lang-content">
@@ -97,7 +97,7 @@
             <h2 class="university-title">IUT Marne-la-Vallée</h2>
             
             <div class="map-container">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3074.042163196201!2d2.582689712287678!3d48.837221002076134!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e60e33dd9a3fdd%3A0x7e5ced48ab7fc8df!2sIUT%20de%20Marne-la-Vall%C3%A9e%20-%20Universit%C3%A9%20Gustave%20Eiffel!5e1!3m2!1sfr!2sfr!4v1749649180588!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>            
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3074.042163196201!2d2.582689712287678!3d48.837221002076134!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e60e33dd9a3fdd%3A0x7e5ced48ab7fc8df!2sIUT%20de%20Marne-la-Vall%C3%A9e%20-%20Universit%C3%A9%20Gustave%20Eiffel!5e1!3m2!1sfr!2sfr!4v1749649180588!5m2!1sfr!2sfr" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>            
             </div>
             <div class="university-logos">
                 <img src="img/contacter/IUT.svg" alt="">
@@ -106,10 +106,9 @@
     </main>
     <footer>
         <div class="footer__lists ff1">
-            <a href="" class="footer__lst">À propos de nous</a>
-            <img src="img/MCN.png" alt="" class="footer__lst">
-            <img src="img/UNESCO.png" alt="" class="footer__lst">
-            <a href="" class="footer__lst">Contactez nous</a>
+            <img src="img/MCN.svg" alt="" class="footer__lst">
+            <img src="img/UNESCO.svg" alt="" class="footer__lst">
+            <a href="contacter.php" class="footer__lst">Contactez nous</a>
         </div>
     </footer>
 </body>

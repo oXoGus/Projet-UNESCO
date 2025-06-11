@@ -6,12 +6,11 @@
       --f2: "Shippori Antique", serif;
 
       /*colors*/
-      --cf: #FFECE5;
-      --cf: #FFE1E8;
+      --cf1: #FFECE5;
+      --cf2: #FFE1E8;
 
       --ct1: #FFF1F4;
       --ct2: #372a31;
-
   }
   ul{
     list-style: none;  
