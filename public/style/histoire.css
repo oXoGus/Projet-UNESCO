@@ -116,7 +116,9 @@ main{
     text-align: right;
 }
 
-
+/* ------------------------------------ */
+/* ------------ANECDOTE----------- */
+/* ------------------------------------ */
 .anecdote__blocks{
   display: flex;
   flex-direction: column;
