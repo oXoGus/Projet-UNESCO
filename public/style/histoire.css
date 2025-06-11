@@ -132,6 +132,8 @@ main{
 .anecdote__header{
   display: flex;
   margin-bottom: 50px;
+  font-size: 50px;
+
 }
 .anecdote__header img{
   max-width: 350px;
@@ -201,6 +203,12 @@ main{
     font-size: 15px;
     width: 100%;
   }
+  .anecdote__header{
+    font-size: 20px;
+  }
+  .anecdote__header img{
+    width: 250px;
+  }
   .anecdote__title{
     font-size: 20px;
   }
@@ -266,6 +274,8 @@ main{
     width: 90%;
     margin-bottom: 30px;
   }
+  .anecdote__header{font-size: 20px;}
+
   .anecdote__header img{
     width: 150px;
   }
