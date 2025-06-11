@@ -13,7 +13,7 @@ session_start();
         
         // requete de verification
         // recuperation du hash
-        $res = $cnx->query("SELECT * FROM user_db where username = ".$cnx->quote($login)." and password_hash = ".$cnx->quote($mdp));
+        $res = $cnx->query("SELECT * FROM admin where login = ".$cnx->quote($login)." and hash = ".$cnx->quote($mdp));
         
         // si il y'a bien un utilisateur correspondant au login et au mdp
         if ($res->fetch(PDO::FETCH_OBJ)){
