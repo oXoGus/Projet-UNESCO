@@ -156,10 +156,10 @@ main{
 
 .block__button {
     display: inline-block;
-    background: #DC143C !important; /* Rouge comme le titre */
-    color: #FFFFFF !important; /* Texte blanc */
+    background: #DC143C ; 
+    color: #FFFFFF;
     padding: 15px 30px;
-    border-radius: 25px; /* Coins arrondis */
+    border-radius: 25px; 
     text-decoration: none;
     font-size: 1.2rem;
     font-weight: 600;
@@ -171,10 +171,10 @@ main{
 }
 
 .block__button:hover {
-    background: #B91C3C !important;
+    background: #B91C3C ;
     transform: translateY(-2px);
     box-shadow: 0 4px 8px rgba(220, 20, 60, 0.4);
-    color: #FFFFFF !important;
+    color: #FFFFFF ;
 }
 
 .block__button:active {
@@ -184,7 +184,7 @@ main{
 
 /* Style alternatif si vous voulez un bouton encore plus visible */
 .block__button--alt {
-    background: linear-gradient(135deg, #DC143C 0%, #B91C3C 100%) !important;
+    background: linear-gradient(135deg, #DC143C 0%, #B91C3C 100%) ;
     border: 2px solid #FFFFFF;
     box-shadow: 0 4px 12px rgba(220, 20, 60, 0.4);
 }
@@ -208,6 +208,10 @@ main{
   
   .block__text {
     font-size: 1.1rem;
+  }
+  .block__button{
+    padding: 6px 12px;
+    font-size: 15px;
   }
 }
 

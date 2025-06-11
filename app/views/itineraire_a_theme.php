@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Itineraires à theme</title>
     <link href="https://fonts.googleapis.com/css2?family=Finger+Paint&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style/itineraire_a_theme.css">
+    <link rel="stylesheet" href="style/itineraire_a_theme.css?v=<?= time(); ?>">
 </head>
 <body>
    <header>
@@ -105,6 +105,52 @@
                     <img src="img/itineraire_a_theme/Nanzen-ji.svg" alt="">
                 </div>
             </div>
+             <div class="container">
+        <div class="variantes-section">
+            <h2 class="section-title variantes-title">Variantes</h2>
+            
+            <div class="variante-item">
+                <span class="variante-emoji">🐶</span>
+                <span class="variante-text"><strong>Avec chien :</strong> pause au parc Nyakuoji / café dog-friendly</span>
+            </div>
+            
+            <div class="variante-item">
+                <span class="variante-emoji">🌸</span>
+                <span class="variante-text"><strong>Printemps :</strong> pique-nique le long du canal</span>
+            </div>
+        </div>
+        
+        <div class="conseils-section">
+            <h2 class="section-title conseils-title">Conseils pratiques</h2>
+            
+            <div class="conseil-item">
+                <span class="conseil-emoji">🌸</span>
+                <span class="conseil-text"><strong>Saison idéale :</strong> fin mars à mi-avril (cerisiers en fleurs).</span>
+            </div>
+            
+            <div class="conseil-item">
+                <span class="conseil-emoji">🐕</span>
+                <span class="conseil-text"><strong>Chien autorisé en laisse,</strong> sauf à l'intérieur des temples.</span>
+            </div>
+            
+            <div class="conseil-item">
+                <span class="conseil-emoji">🥪</span>
+                <span class="conseil-text"><strong>Prévoir une nappe et un pique-nique</strong> - endroits calmes le long du canal.</span>
+            </div>
+            
+            <div class="conseil-item">
+                <span class="conseil-emoji">☕</span>
+                <span class="conseil-text"><strong>Petits cafés charmants cachés</strong> - pas toujours indiqués sur les cartes.</span>
+            </div>
+            
+            <div class="conseil-item">
+                <span class="conseil-emoji">⏰</span>
+                <span class="conseil-text"><strong>Y aller tôt le matin ou vers 16h</strong> pour une lumière dorée.</span>
+            </div>
+        </div>
+    </div>
+
+
         </div>
     </main>
     <footer>
