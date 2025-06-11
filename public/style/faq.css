@@ -23,7 +23,12 @@ main {
     overflow: hidden;
 }
 .section {
-    border-bottom: 2px solid #2d5016;
+    border-bottom: 7px solid #2d5016;
+    border-bottom-left-radius: 15px;
+    padding: 10px;
+}
+.v{
+    border-bottom: 7px solid #B0C68B;
 }
 .section:last-child {
     border-bottom: none;
