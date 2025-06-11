@@ -162,6 +162,7 @@ main{
 .anecdote__header{
   display: flex;
   margin-bottom: 50px;
+  font-size: 50px;
 }
 .anecdote__header img{
   max-width: 350px;
@@ -208,6 +209,12 @@ main{
   
   .block__text {
     font-size: 1.1rem;
+  }
+  .anecdote__header{
+    font-size: 20px;
+  }
+  .anecdote__header img{
+    width: 250px;
   }
   .anecdote__title{
     font-size: 20px;
@@ -258,6 +265,7 @@ main{
     font-size: 2.5rem;
     margin-top: 1.5rem;
   }
+  .anecdote__header{font-size: 20px;}
   .anecdote__header img{
     width: 150px;
   }
