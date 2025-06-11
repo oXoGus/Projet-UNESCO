@@ -83,6 +83,9 @@
                           <span class="tag">SeniorFriendly</span>
                           <span class="tag">Photo</span>
                       </div>
+                      <div class="block__buttons">
+                          <a href="itineraire_a_theme.php" class="block__button">Voir le itinéraire</a>
+                      </div>
                   </div>
                 </div>
                 <img src="img/itineraire/black_figure.png" alt="">
@@ -101,6 +104,9 @@
                       <div class="block__tags">
                           <span class="tag">SeniorFriendly</span>
                           <span class="tag">Photo</span>
+                      </div>
+                      <div class="block__buttons">
+                          <a href="itineraire_a_theme.php" class="block__button">Voir le itinéraire</a>
                       </div>
                   </div>
                 </div>
@@ -121,6 +127,9 @@
                           <span class="tag">SeniorFriendly</span>
                           <span class="tag">Photo</span>
                       </div>
+                      <div class="block__buttons">
+                          <a href="itineraire_a_theme.php" class="block__button">Voir le itinéraire</a>
+                      </div>
                   </div>
                 </div>
                 <img src="img/itineraire/black_figure.png" alt="">
@@ -139,6 +148,9 @@
                       <div class="block__tags">
                           <span class="tag">SeniorFriendly</span>
                           <span class="tag">Photo</span>
+                      </div>
+                      <div class="block__buttons">
+                          <a href="itineraire_a_theme.php" class="block__button">Voir le itinéraire</a>
                       </div>
                   </div>
                 </div>
@@ -159,6 +171,9 @@
                           <span class="tag">SeniorFriendly</span>
                           <span class="tag">Photo</span>
                       </div>
+                      <div class="block__buttons">
+                          <a href="itineraire_a_theme.php" class="block__button">Voir le itinéraire</a>
+                      </div>
                   </div>
                 </div>
                 <img src="img/itineraire/black_figure.png" alt="">
@@ -178,6 +193,9 @@
                           <span class="tag">SeniorFriendly</span>
                           <span class="tag">Photo</span>
                       </div>
+                      <div class="block__buttons">
+                          <a href="itineraire_a_theme.php" class="block__button">Voir le itinéraire</a>
+                      </div>
                   </div>
                 </div>
                 <img src="img/itineraire/black_figure.png" alt="">
@@ -196,6 +214,9 @@
                       <div class="block__tags">
                           <span class="tag">SeniorFriendly</span>
                           <span class="tag">Photo</span>
+                      </div>
+                      <div class="block__buttons">
+                          <a href="itineraire_a_theme.php" class="block__button">Voir le itinéraire</a>
                       </div>
                   </div>
                 </div>
