@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Itineraires</title>
-    <link rel="stylesheet" href="style/itineraire.css">
+    <link rel="stylesheet" href="style/itineraire.css?v=<?= time(); ?>">
 </head>
 <body>
        <header>

@@ -1,6 +1,38 @@
 @import url(blocks/header.css);
 @import url(blocks/footer.css);
 
+body, html {
+  height: 100%;
+  margin: 0;
+}
+header {
+  /* The image used */
+  background-image: url("../img/orange_coloir_Kyoto.svg");
+
+  /* Full height */
+  height: 100%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.header__logo{
+    z-index: 10000;
+}
+.header__title{
+  position: absolute;
+  top: 300px;
+  right: 300px;
+  color: rgb(255, 255, 255);
+  font-size: 10rem;
+  font-family: var(--f1);
+  text-align: center;
+}
+.mobile-title {
+  display: none;
+}   
+
 main{
     display: flex;
     flex-direction: column;
@@ -179,49 +211,218 @@ main{
     text-align: right;
 }
 
+.container {
+    max-width: 900px;
+    margin: 50px auto;
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+.variantes-section {
+    margin-bottom: 50px;
+}
+
+.section-title {
+    font-family: 'Caveat', cursive;
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.variantes-title {
+    padding: 15px 25px;
+    display: inline-block;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.variante-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    line-height: 1.6;
+    font-size: 1.1rem;
+}
+
+.variante-emoji {
+    font-size: 1.4rem;
+    margin-right: 15px;
+    min-width: 30px;
+    flex-shrink: 0;
+}
+
+.variante-text {
+    color: #2c3e50;
+    font-weight: 400;
+}
+
+.conseils-section {
+    margin-top: 40px;
+}
+
+.conseils-title {
+    margin-bottom: 30px;
+}
+
+.conseil-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 18px;
+    line-height: 1.7;
+    font-size: 1rem;
+    padding: 8px 0;
+}
+
+.conseil-emoji {
+    font-size: 1.3rem;
+    margin-right: 12px;
+    min-width: 28px;
+    flex-shrink: 0;
+}
+
+.conseil-text {
+    color: #000000;
+    font-weight: 400;
+}
+
+.conseil-text strong {
+    color: #000000;
+    font-weight: 600;
+}
+
+/* Effets décoratifs */
+.cherry-blossom {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50% 0;
+    opacity: 0.3;
+    animation: float 6s ease-in-out infinite;
+}
+
+.cherry-blossom:nth-child(1) {
+    top: 10%;
+    right: 10%;
+    animation-delay: 0s;
+}
+
+.cherry-blossom:nth-child(2) {
+    top: 60%;
+    right: 5%;
+    animation-delay: 2s;
+}
+
+.cherry-blossom:nth-child(3) {
+    top: 30%;
+    left: 8%;
+    animation-delay: 4s;
+}
+
+
+
+@media screen and (max-width: 1400px) {
+  .header__title {
+    font-size: 100px;
+  }
+}   
+
+
+
 @media screen and (max-width: 1280px) {
 
+.blocks__center{
+  width: 100px;
+}
 .blocks__left img{
-    max-width: 350px;
+    max-width: 300px;
     margin-bottom: 40px;
 }
 
 .blocks__right img{
-    max-width: 350px;
+    max-width: 300px;
     margin-bottom: 40px;
 }
 .block__text{
     font-size: 18px;
     text-align: left;
-    width: 450px;
+    width: 400px;
 }
 .block__title{
-    background: url(../img/histoire/red_left.png) 0 0/100% 100% no-repeat;
-    font-size: 28px;
-    padding: 0 100px 0 10px;
+  font-size: 20px;
+    padding: 0 50px 0 10px;
     margin: 0 0 10px 0;
     color: #000000;
-    width: 100%;
+}
+.right{
+    text-align: right;
+    font-size: 20px;
+    padding: 0 10px 0 50px;
 }
 
+
 }
+
+@media screen and (max-width: 1024px) {
+  .header__title {
+    font-size: 100px;
+  }
+}   
 
 @media screen and (max-width: 968px) {
+  .main__header_text{
+    font-size: 20px;
+    padding: 10px;
+  }
+  .blocks__center{
+    width: 70px;
+  }
   .blocks__left, .blocks__right {
-    width: 45%;
+    width: 35%;
   }
   
   .block__title {
-    font-size: 36px;
+    font-size: 20px;
   }
   
   .block__text {
-    font-size: 16px;
+    font-size: 15px;
+    width: 100%;
   }
 }
 
 @media screen and (max-width: 768px) {
-    main{
+  header{
+    background-image: url("../img/Kyoto_Enfants.svg");
+  }
+  .header__title {
+      font-size: 70px;
+  }
+  .desktop-title {
+    display: none;
+  }
+  .mobile-title {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    top: 20%;
+    left: 50%;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 10px;
+    height: 70%;
+  }
+  
+  .mobile-title span {
+    font-size: 70px;
+    line-height: 1;
+    margin-bottom: 5px;
+  }
+   main{
         padding: 0;
     }
   .content__blocks {
@@ -232,13 +433,7 @@ main{
   }
   
   .blocks__center {
-    position: absolute;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    width: 100px; 
-    height: 100%;
-    margin: 0;
+    display: none;
   }
   
   .blocks__left, .blocks__right {
@@ -256,13 +451,13 @@ main{
     margin-bottom: 30px;
   }
   
+  
   .block__title {
     font-size: 24px;
     padding: 5px 50px 5px 10px;
   }
   
   .right {
-    background: url(img/red_left.png) 0 0/100% 100% no-repeat; 
     text-align: left;
     padding: 5px 50px 5px 10px;
   }
@@ -279,78 +474,6 @@ main{
   }
 }
 
-body, html {
-  height: 100%;
-  margin: 0;
-}
-header {
-  /* The image used */
-  background-image: url("../img/orange_coloir_Kyoto.svg");
-
-  /* Full height */
-  height: 100%; 
-
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.header__logo{
-    z-index: 10000;
-}
-.header__title{
-  position: absolute;
-  top: 300px;
-  right: 300px;
-  color: rgb(255, 255, 255);
-  font-size: 10rem;
-  font-family: var(--f1);
-  text-align: center;
-}
-.mobile-title {
-  display: none;
-}   
-
-@media screen and (max-width: 1400px) {
-  .header__title {
-    font-size: 200px;
-  }
-}   
-
-@media screen and (max-width: 1024px) {
-  .header__title {
-    font-size: 100px;
-  }
-}   
-
-@media screen and (max-width: 768px) {
-    header{
-  background-image: url("../img/Kyoto_Enfants.svg");
-    }
-    .header__title {
-        font-size: 80px;
-    }
-    .desktop-title {
-        display: none;
-      }
-      .mobile-title {
-        color: #fff;
-        display: flex;
-        flex-direction: column;
-        top: 20%;
-        left: 50%;
-        align-items: center;
-        justify-content: center;
-        letter-spacing: 10px;
-        height: 70%;
-      }
-  
-      .mobile-title span {
-        font-size: 100px;
-        line-height: 1;
-        margin-bottom: 5px;
-      }
-}   
 
 @media screen and (max-width: 480px) {
   .desktop-title {
@@ -367,7 +490,7 @@ header {
     height: 70%;
   }
   .mobile-title span {
-    font-size: 100px;
+    font-size: 50px;
     line-height: 1;
     margin-bottom: 5px;
   }
