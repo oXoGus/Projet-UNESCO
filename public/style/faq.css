@@ -25,7 +25,7 @@ main {
 .section {
     border-bottom: 7px solid #2d5016;
     border-bottom-left-radius: 15px;
-    padding: 10px;
+    padding: 10pxg;
 }
 .v{
     border-bottom: 7px solid #B0C68B;
@@ -36,7 +36,7 @@ main {
 .section-header {
     background: transparent;
     color: #162F0E;
-    padding: 0; /* обнуляємо, щоб не впливало на вирівнювання */
+    padding: 0; 
     cursor: pointer;
     position: relative;
     display: flex;
@@ -53,7 +53,7 @@ main {
 }
 
 .section-header.collapsed::before {
-    transform: rotate(-180deg);
+    transform: rotate(-90deg);
 }
 
 .section-title {
@@ -121,14 +121,14 @@ main {
 }
 
 .question::before {
-    content: '▼ ';
+    content: '► ';
     color: #000000;
     display: inline-block;
     transition: transform 0.3s ease;
 }
 
 .qa.open .question::before {
-    transform: rotate(180deg);
+    transform: rotate(90deg);
 }
 .empty-content {
     height: 60px;
