@@ -12,7 +12,6 @@ session_start();
         
         
         // requete de verification
-        // recuperation du hash
         $res = $cnx->query("SELECT * FROM admin where login = ".$cnx->quote($login)." and hash = ".$cnx->quote($mdp));
         
         // si il y'a bien un utilisateur correspondant au login et au mdp
@@ -20,10 +19,10 @@ session_start();
             // on laisse l'utilisateur aller sur la page
         }
         else {
-            header('location: /Daktari/connexion.php');
+            header('location: index.php');
         }
     }
     else {
-        header('location: /Daktari/connexion.php');
+        header('location: index.php');
     }
 ?>

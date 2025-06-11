@@ -1,0 +1,151 @@
+@import url(blocks/header.css);
+@import url(blocks/footer.css);
+
+
+body {
+    background-color: white;
+    margin: 0px;
+    width: 100%;
+}
+
+.loginContainer {
+    position: absolute;
+    max-height: calc(100vh - 25px);
+    overflow-y: scroll;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #444444;
+    border-radius: 0px;
+    padding: 25px;
+}
+
+
+h2 {
+    font-family: "Shippori Antique", serif;
+    font-weight: 300;
+    font-style: normal;
+    color: #FFFF;  
+    font-size: 50px;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+
+input {
+    width: calc(100% - 5px);
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    padding: 0px;
+    padding-left: 5px;
+    font-size: 30px;
+}
+
+p {
+    font-family: "Shippori Antique", serif;
+    font-weight: 300;
+    font-style: normal;
+    color: #FFFF;  
+    font-size: 30px;
+    
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+a {
+    color: #FFFF;
+}
+
+
+
+#submitBtn {
+    background-color: #A8D5B1;
+    color: black; 
+
+    margin-top: 50px;
+    
+    font-family: "Shippori Antique", serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 35px;
+
+    border: none;
+
+    width: 100%;
+
+    height: 60px;
+}
+
+#submitBtn:hover {
+    background-color: #a8d198;
+    transition: 0.5s;
+}
+
+textarea {
+    color: black; 
+    width: calc(100% - 5px);
+    height: 100px;
+    resize: none;
+    border-radius: 10px;
+    border: none;
+    padding: 0px;
+    padding-left: 5px;
+    padding-top: 4px;
+    font-size: 30px;
+}
+
+
+.err {
+    font-weight: bold;
+    font-size: 28px;
+    color: rgb(226, 69, 69);
+    text-align: center;
+}
+
+.msg {
+    font-weight: bold;
+    font-size: 28px;
+    color: white;
+    text-align: center;
+}
+
+.avatar {
+    max-width: 200px;
+    height: auto;
+}
+
+.containerVertialCenter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form {
+    margin-bottom: 30px;
+} 
+
+#btnRadio {
+    width: 30px;
+    height: 30px;
+}
+
+
+.inputContainer {
+    display: flex;
+    align-items: center;
+    width: inherit;
+}
+
+.btnEye {
+    margin-left: -50px;
+    width: 40px;
+    height: 40px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    background-color: transparent;
+    background-image: url('../img/eyeClosed.svg');
+}
