@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Histoire</title>
     <link href="https://fonts.googleapis.com/css2?family=Finger+Paint&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style/histoire.css">
+    <link rel="stylesheet" href="style/histoire.css?v=<?= time(); ?>">
+
 </head>
 <body>
    <header>
@@ -109,6 +110,17 @@
                         <div class="block__title ff1 right">1994</div>
                         <div class="block__text r">Kyoto est inscrite au patrimoine mondial de l'UNESCO, en raison de la conservation exceptionnelle de ses monuments historiques, de ses temples, de ses sanctuaires et de ses jardins historiques. Cela renforce sa réputation de capitale culturelle et historique.</div>
                     </div>
+                </div>
+            </div>
+            <div class="anecdote__blocks">
+                <div class="anecdote__header">
+                    <img src="img/histoire/anecdote_l.svg" alt="" class="anecdote__img">
+                    <p class="anecdote__header__title">Anecdotes</p>
+                    <img src="img/histoire/anecdote_r.svg" alt="" class="anecdote__img">
+                </div>
+                <div class="anecdote__block">
+                    <h1 class="anecdote__title">1. Kyoto, capitale pendant plus de 1000 ans</h1>
+                    <p class="anecdote__text">Fondée en 794 sous le nom de Heian-kyō, Kyoto a été la capitale impériale du Japon pendant plus d’un millénaire, jusqu’à la restauration de Meiji en 1868. Pendant tout ce temps, elle fut le centre culturel, artistique et spirituel du pays — même lorsque le pouvoir politique se déplaçait vers d'autres régions.</p>
                 </div>
             </div>
         </div>

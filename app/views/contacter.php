@@ -108,7 +108,7 @@
         <div class="footer__lists ff1">
             <img src="img/MCN.svg" alt="" class="footer__lst">
             <img src="img/UNESCO.svg" alt="" class="footer__lst">
-            <a href="" class="footer__lst">Contactez nous</a>
+            <a href="contacter.php" class="footer__lst">Contactez nous</a>
         </div>
     </footer>
 </body>
