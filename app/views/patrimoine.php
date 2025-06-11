@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Patrimoine</title>
-    <link rel="stylesheet" href="style/patrimoine.css">
+    <link rel="stylesheet" href="style/patrimoine.css?v=<?= time(); ?>">
 </head>
 <body>
        <header>
@@ -121,6 +121,19 @@
                     
                 </div>
                 <img src="img/patrimoine/figure-footer.png" alt="">
+            </div>
+            <div class="anecdote__blocks">
+                <div class="anecdote__header">
+                    <img src="img/histoire/anecdote_l.svg" alt="" class="anecdote__img">
+                    <p class="anecdote__header__title">Anecdotes</p>
+                    <img src="img/histoire/anecdote_r.svg" alt="" class="anecdote__img">
+                </div>
+                <div class="anecdote__block">
+                    <h1 class="anecdote__title">
+                        1. Le temple Kiyomizu-dera et le saut de la foi
+                    </h1>
+                    <p class="anecdote__text">Au temple Kiyomizu-dera, une ancienne coutume disait que sauter de la terrasse principale (à 13 mètres de haut) pouvait exaucer un vœu si l'on survivait. Durant l’époque Edo, plus de 200 personnes auraient tenté ce saut — avec un taux de survie étonnamment élevé de 85 %. Heureusement, cette pratique est désormais interdite.                    </p>
+                </div>
             </div>
         </div>
     </main>
