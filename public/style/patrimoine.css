@@ -1,7 +1,37 @@
 @import url(blocks/header.css);
 @import url(blocks/footer.css);
 
+body, html {
+  height: 100%;
+  margin: 0;
+}
 
+header {
+  /* The image used */
+  background-image: url("../img/Byōdō-in.jpg");
+
+  /* Full height */
+  height: 100%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.header__logo{
+    z-index: 100;
+}
+.header__title{
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: rgb(255, 255, 255);
+  font-size: 100px;
+  font-family: var(--f1);
+}
+.mobile-title {
+  display: none;
+}  
 
 
 main{
@@ -38,7 +68,7 @@ main{
     align-items: center;
 }
 .content__title{
-    background: url(../img/patrimoine/red_line.png) 0 0/100% 100% no-repeat;
+    background: url(img/red_line.png) 0 0/100% 100% no-repeat;
     font-size: 45px;
     padding: 0 20% 0 10px;
     color: #FFF1F4;
@@ -120,6 +150,17 @@ main{
 /* ----------------------------------------------
                     Adaptive
 ------------------------------------------------- */
+@media screen and (max-width: 1400px) {
+  .header__title {
+    font-size: 100px;
+  }
+}  
+
+@media screen and (max-width: 1024px) {
+    .header__title {
+      font-size: 60px;
+    }    
+}  
 
 @media (max-width: 1280px) {
     .block__img img{
@@ -139,6 +180,30 @@ main{
 
 /* Адаптивність для мобільних */
 @media screen and (max-width: 768px) {
+  header{
+    background-image: url("../img/patrimoine_t.jpg");
+  }
+  .header__title {
+      font-size: 50px;
+  }
+  .desktop-title {
+      display: none;
+  }
+  .mobile-title {
+    display: flex;
+    flex-direction: column;
+    top: 50%;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 10px;
+    height: 70%;
+  }
+  
+  .mobile-title span {
+    font-size: 50px;
+    line-height: 1;
+    margin-bottom: 5px;
+  }
   .content__block {
     flex-direction: column;
   }
@@ -155,84 +220,12 @@ main{
     font-size: 2.5rem;
     margin-top: 1.5rem;
   }
-}
-
-body, html {
-  height: 100%;
-  margin: 0;
-}
-header {
-  /* The image used */
-  background-image: url("../img/Byōdō-in.jpg");
-
-  /* Full height */
-  height: 100%; 
-
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.header__logo{
-    z-index: 10000;
-}
-.header__title{
-  position: absolute;
-  bottom: 10px;
-  left: 10px;
-  color: rgb(255, 255, 255);
-  font-size: 100px;
-  font-family: var(--f1);
-}
-.mobile-title {
-  display: none;
-}   
-
-@media screen and (max-width: 1400px) {
-  .header__title {
-    font-size: 100px;
-  }
-}   
-
-@media screen and (max-width: 1024px) {
-  .header__title {
-    font-size: 60px;
-  }
-  
-}   
-
-@media screen and (max-width: 768px) {
-    header{
-  background-image: url("../img/patrimoine_t.jpg");
-    }
-    .header__title {
-        font-size: 50px;
-    }
-    .desktop-title {
-        display: none;
-      }
-      .mobile-title {
-        display: flex;
-        flex-direction: column;
-        top: 50%;
-        align-items: center;
-        justify-content: center;
-        letter-spacing: 10px;
-        height: 70%;
-      }
-  
-      .mobile-title span {
-        font-size: 50px;
-        line-height: 1;
-        margin-bottom: 5px;
-      }
-}   
+} 
 
 @media screen and (max-width: 480px) {
   .desktop-title {
     display: none;
   }
-
   .mobile-title {
     display: flex;
     flex-direction: column;
@@ -242,9 +235,8 @@ header {
     letter-spacing: 10px;
     height: 70%;
   }
-
   .mobile-title span {
-    font-size: 50px;
+    font-size: 40px;
     line-height: 1;
     margin-bottom: 5px;
   }
