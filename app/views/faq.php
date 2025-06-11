@@ -67,9 +67,9 @@
                 </div>
             </div>
         </div>
-
+      </div>
         <!-- Transports et déplacements -->
-        <div class="section">
+        <div class="section v">
             <div class="section-header collapsed" onclick="toggleSection(this)">
               <div class="section-title">Transports et déplacements</div>
             </div>
@@ -91,7 +91,7 @@
                 </div>
             </div>
         </div>
-
+        </div>
         <!-- Sites touristiques et activités -->
         <div class="section">
             <div class="section-header collapsed" onclick="toggleSection(this)">
@@ -115,9 +115,9 @@
                 </div>
             </div>
         </div>
-
+        </div>
         <!-- Hébergement et restauration -->
-        <div class="section">
+        <div class="section v">
             <div class="section-header collapsed" onclick="toggleSection(this)">
                 <div class="section-title">Hébergement et restauration</div>
             </div>
@@ -139,7 +139,7 @@
                 </div>
             </div>
         </div>
-
+        </div>  
         <!-- Sécurité et accessibilité -->
         <div class="section">
             <div class="section-header collapsed" onclick="toggleSection(this)">
@@ -163,9 +163,9 @@
                 </div>
             </div>
         </div>
-
+        </div>
         <!-- Technologie et connectivité -->
-        <div class="section">
+        <div class="section v">
             <div class="section-header collapsed" onclick="toggleSection(this)">
                 <div class="section-title">Technologie et connectivité</div>
             </div>
@@ -187,7 +187,7 @@
                 </div>
             </div>
         </div>
-
+        </div>
         <!-- Argent et paiements -->
         <div class="section">
             <div class="section-header collapsed" onclick="toggleSection(this)">
@@ -211,9 +211,9 @@
                 </div>
             </div>
         </div>
-
+        </div>
         <!-- Expérience locale et shopping -->
-        <div class="section">
+        <div class="section v">
             <div class="section-header collapsed" onclick="toggleSection(this)">
                 <div class="section-title">Expérience locale et shopping</div>
             </div>
@@ -235,13 +235,13 @@
                 </div>
             </div>
         </div>
-
+        </div>
         <!-- Loisirs et divertissements -->
         <div class="section">
             <div class="section-header collapsed" onclick="toggleSection(this)">
                 <div class="section-title">Loisirs et divertissements</div>
             </div>
-            <div class="section-content collapsed">
+          <div class="section-content collapsed">
             <div class="periods-section">
                 <div class="periods-content">
                     <div class="qa">
@@ -258,7 +258,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+          </div>
         </div>
     </div>
 
