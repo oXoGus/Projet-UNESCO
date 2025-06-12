@@ -29,10 +29,10 @@
               </nav>
               <a href="index.html" class="header__logo"><img src="img/logo.png" alt=""></a>
               <div class="lang">
-                <button class="lang_btn"><p>Fr</p></button>
+                <button class="lang_btn"><p><?php if ($lang ===  "FR") {echo "Fr";} else {echo "En";}?></p></button>
                 <div class="lang-content">
-                  <a href="#">Fr</a>
-                  <a href="#">En</a>
+                  <a href="patrimoine.php?lang=FR">Fr</a>
+                  <a href="patrimoine.php?lang=EN">En</a>
                 </div>
               </div>
             </div>

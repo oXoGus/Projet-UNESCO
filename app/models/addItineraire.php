@@ -18,7 +18,6 @@
         $query = $cnx->prepare("INSERT INTO etapes (contenu) VALUES (:contenu) RETURNING id");
         $query->execute(["contenu" => $_POST['titreFR']]);
         $titreId = $query->fetch(PDO::FETCH_OBJ);
-        
 
         
 

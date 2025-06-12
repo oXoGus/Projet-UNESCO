@@ -31,11 +31,11 @@
           </nav>
           <a href="index.php" class="header__logo"><img src="img/logo.svg" alt=""></a>
           <div class="lang">
-            <button class="lang_btn"><p>Fr</p></button>
-            <div class="lang-content">
-              <a href="#">Fr</a>
-              <a href="#">En</a>
-            </div>
+            <button class="lang_btn"><p><?php if ($lang ===  "FR") {echo "Fr";} else {echo "En";}?></p></button>
+                <div class="lang-content">
+                  <a href="histoire.php?lang=FR">Fr</a>
+                  <a href="histoire.php?lang=EN">En</a>
+              </div>
           </div>
         </div>
         <p class="header__title desktop-title">Son <br>histoire</p>
