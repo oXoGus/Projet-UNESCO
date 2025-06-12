@@ -18,11 +18,15 @@ main {
   font-family: var(--f1);
 }
 .container {
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
     background: white;
     border-radius: 10px;
     overflow: hidden;
 }
 .section {
+
     border-bottom: 7px solid #2d5016;
     border-bottom-left-radius: 15px;
     padding: 10pxg;

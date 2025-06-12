@@ -51,22 +51,22 @@
             <div class="main__blocks">
                 <div class="block1">
                     <div class="block__info">
-                        <?php echo $res->fetch(PDO::FETCH_OBJ)?>
+                        <?php echo $res->fetch(PDO::FETCH_OBJ)->valeur?>
                     </div>
                     <img src="img/Byōdō-in.jpg" alt="">
                 </div>
                 <div class="block2">
                     <img src="img/Yasaka.jpg" alt="">
-                    <div class="block__info"><?php echo $res->fetch(PDO::FETCH_OBJ)?></div>
+                    <div class="block__info"><?php echo $res->fetch(PDO::FETCH_OBJ)->valeur?></div>
                 </div>
                <div class="main__block">
                     <div class="block__info">
                         <img src="img/red_v.png" alt="">
                         <div class="block__texts">
-                            <p class="block__title ff1"><?php echo $res->fetch(PDO::FETCH_OBJ)?></p>
-                            <p class="block__text"><?php echo $res->fetch(PDO::FETCH_OBJ)?></p>
+                            <p class="block__title ff1"><?php echo $res->fetch(PDO::FETCH_OBJ)->valeur?></p>
+                            <p class="block__text"><?php echo $res->fetch(PDO::FETCH_OBJ)->valeur?></p>
                             <div class="block__btn ff1">
-                                <a href="histoire/histoire.php"><?php echo $res->fetch(PDO::FETCH_OBJ)?></a>
+                                <a href="histoire/histoire.php"><?php echo $res->fetch(PDO::FETCH_OBJ)->valeur?></a>
                             </div>
                         </div>
                     </div>
@@ -77,10 +77,10 @@
                     <div class="block__info right">
                         <img src="img/red_v.png" alt="">
                         <div class="block__texts">
-                            <p class="block__title ff1"><?php echo $res->fetch(PDO::FETCH_OBJ)?></p>
-                            <p class="block__text"><?php echo $res->fetch(PDO::FETCH_OBJ)?></p>
+                            <p class="block__title ff1"><?php echo $res->fetch(PDO::FETCH_OBJ)->valeur?></p>
+                            <p class="block__text"><?php echo $res->fetch(PDO::FETCH_OBJ)->valeur?></p>
                             <div class="block__btn ff1">
-                                <a href="patrimoine/patrimoine.php"><?php echo $res->fetch(PDO::FETCH_OBJ)?></a>
+                                <a href="patrimoine/patrimoine.php"><?php echo $res->fetch(PDO::FETCH_OBJ)->valeur?></a>
                             </div>
                         </div>
                     </div>

@@ -5,11 +5,11 @@
 
     if (isset($_GET['lang']) && !empty($_GET['lang'])){
         
-        echo "";
         // lang valide 
         $newLang = $_GET['lang'];
         if ($newLang === "FR" || $newLang === "EN"){
-            
+            $lang = $newLang;
+
             // on met l'info dans le cookie 
             setcookie("lang", $newLang, time() + 30*24*3600); // on le stoque un mois
         }

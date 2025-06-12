@@ -36,7 +36,7 @@
               </div>
           </div>
         </div>
-        <p class="header__title desktop-title">Nous contacter</p>
+        <p class="header__title desktop-title"<?php echo $res->fetch(PDO::FETCH_OBJ)->valeur?></p>
             <div class="header__title mobile-title">
               <span>Nous</span>
               <span>contacter</span>
@@ -46,11 +46,11 @@
     <main>
         <div class="main__header">
             <div class="main__header_text">
-                Nous sommes un groupe d'étudiants de l'Université Gustave Eiffel avec comme projet de promouvoir la culture et le patrimoine de la ville de Kyoto.        
+                <?php echo $res->fetch(PDO::FETCH_OBJ)->valeur?>
             </div>
        <div class="main__header">
-            <h1 class="main__header_title">Notre Équipe</h1>
-            <p class="main__header_text">Découvrez les membres de notre équipe talentueuse</p>
+            <h1 class="main__header_title"><?php echo $res->fetch(PDO::FETCH_OBJ)->valeur?></h1>
+            <p class="main__header_text"><?php echo $res->fetch(PDO::FETCH_OBJ)->valeur?></p>
         </div>
 
         <section class="team-section">
@@ -58,7 +58,7 @@
                 <!-- Maëllys GIGLIONI -->
                 <div class="team-member">
                   <h3 class="member-name">Maëllys GIGLIONI</h3>
-                  <p class="member-role">Responsable contenu / communication</p>
+                  <p class="member-role"><?php echo $res->fetch(PDO::FETCH_OBJ)->valeur?></p>
                     <img src="img/contacter/Maellys.png" alt="Maëllys GIGLIONI" class="member-avatar">
                     <div class="social-links">
                         <a href="#" class="social-link linkedin" title="LinkedIn"><img src="img/contacter/🦆 icon _linkedin_.svg" alt=""></a>
@@ -70,7 +70,7 @@
                 <!-- Mathis DINTRAT -->
                 <div class="team-member">
                   <h3 class="member-name">Mathis DINTRAT</h3>
-                  <p class="member-role">Chef de projet / designer</p>
+                  <p class="member-role"><?php echo $res->fetch(PDO::FETCH_OBJ)->valeur?></p>
                     <img src="img/contacter/Mathis.png" alt="Mathis DINTRAT" class="member-avatar">
                    <div class="social-links">
                         <a href="#" class="social-link linkedin" title="LinkedIn"><img src="img/contacter/🦆 icon _linkedin_.svg" alt=""></a>
@@ -82,7 +82,7 @@
                 <!-- Yevhen KEFA -->
                 <div class="team-member">
                   <h3 class="member-name">Yevhen KEFA</h3>
-                  <p class="member-role">Développeur</p>
+                  <p class="member-role"><?php echo $res->fetch(PDO::FETCH_OBJ)->valeur?></p>
                     <img src="img/contacter/Yevhen.png" alt="Yevhen KEFA" class="member-avatar">
                     <div class="social-links">
                         <a href="#" class="social-link linkedin" title="LinkedIn"><img src="img/contacter/🦆 icon _linkedin_.svg" alt=""></a>

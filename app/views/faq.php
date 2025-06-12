@@ -5,6 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FAQ</title>
     <link rel="stylesheet" href="style/faq.css?v=<?= time(); ?>">
+
+
+<script defer>
+        function toggleSection(header) {
+            const content = header.nextElementSibling;
+            const isCollapsed = header.classList.contains('collapsed');
+            
+            if (isCollapsed) {
+                header.classList.remove('collapsed');
+                content.classList.remove('collapsed');
+                content.classList.add('expanded');
+            } else {
+                header.classList.add('collapsed');
+                content.classList.remove('expanded');
+                content.classList.add('collapsed');
+            }
+        }
+        function toggleAnswer(questionElement) {
+          const qa = questionElement.closest('.qa');
+          qa.classList.toggle('open');
+        }
+    </script>
+
 </head>
 <body>
        <header>
@@ -36,9 +59,9 @@
                 </div>
               </div>
             </div>
-            <p class="header__title desktop-title"><?php echo $res->fetch(PDO::FETCH_OBJ)?></p>
+            <p class="header__title desktop-title"><?php echo "FAQ"?></p>
             <div class="header__title mobile-title">
-              <span><?php echo $res->fetch(PDO::FETCH_OBJ)?></span>
+              <span><?php echo $res->fetch(PDO::FETCH_OBJ)->valeur?></span>
             </div>
           </div>
         </header>
@@ -47,22 +70,22 @@
       <!-- Périodes et climats -->
       <div class="section">
         <div class="section-header" onclick="toggleSection(this)">
-            <div class="section-title"><p><?php echo $res->fetch(PDO::FETCH_OBJ)?></p></div>
+            <div class="section-title"><p><?php echo $res->fetch(PDO::FETCH_OBJ)->valeur?></p></div>
         </div>
         <div class="section-content expanded">
             <div class="periods-section">
                 <div class="periods-content">
                     <div class="qa">
-                        <div class="question" onclick="toggleAnswer(this)"><?php echo $res->fetch(PDO::FETCH_OBJ)?></div>
-                        <div class="answer"><?php echo $res->fetch(PDO::FETCH_OBJ)?></div>
+                        <div class="question" onclick="toggleAnswer(this)"><?php echo $res->fetch(PDO::FETCH_OBJ)->valeur?></div>
+                        <div class="answer"><?php echo $res->fetch(PDO::FETCH_OBJ)->valeur?></div>
                     </div>
                     <div class="qa">
-                        <div class="question" onclick="toggleAnswer(this)"><?php echo $res->fetch(PDO::FETCH_OBJ)?></div>
-                        <div class="answer"><?php echo $res->fetch(PDO::FETCH_OBJ)?></div>
+                        <div class="question" onclick="toggleAnswer(this)"><?php echo $res->fetch(PDO::FETCH_OBJ)->valeur?></div>
+                        <div class="answer"><?php echo $res->fetch(PDO::FETCH_OBJ)->valeur?></div>
                     </div>
                     <div class="qa">
-                        <div class="question" onclick="toggleAnswer(this)"><?php echo $res->fetch(PDO::FETCH_OBJ)?></div>
-                        <div class="answer"><?php echo $res->fetch(PDO::FETCH_OBJ)?></div>
+                        <div class="question" onclick="toggleAnswer(this)"><?php echo $res->fetch(PDO::FETCH_OBJ)->valeur?></div>
+                        <div class="answer"><?php echo $res->fetch(PDO::FETCH_OBJ)->valeur?></div>
                     </div>
                 </div>
             </div>
@@ -71,22 +94,22 @@
         <!-- Transports et déplacements -->
         <div class="section v">
             <div class="section-header collapsed" onclick="toggleSection(this)">
-              <div class="section-title"><?php echo $res->fetch(PDO::FETCH_OBJ)?></div>
+              <div class="section-title"><?php echo $res->fetch(PDO::FETCH_OBJ)->valeur?></div>
             </div>
             <div class="section-content collapsed">
             <div class="periods-section">
                 <div class="periods-content">
                     <div class="qa">
-                        <div class="question" onclick="toggleAnswer(this)"><?php echo $res->fetch(PDO::FETCH_OBJ)?></div>
-                        <div class="answer"><?php echo $res->fetch(PDO::FETCH_OBJ)?></div>
+                        <div class="question" onclick="toggleAnswer(this)"><?php echo $res->fetch(PDO::FETCH_OBJ)->valeur?></div>
+                        <div class="answer"><?php echo $res->fetch(PDO::FETCH_OBJ)->valeur?></div>
                     </div>
                     <div class="qa">
-                        <div class="question" onclick="toggleAnswer(this)"><?php echo $res->fetch(PDO::FETCH_OBJ)?></div>
-                        <div class="answer"><?php echo $res->fetch(PDO::FETCH_OBJ)?></div>
+                        <div class="question" onclick="toggleAnswer(this)"><?php echo $res->fetch(PDO::FETCH_OBJ)->valeur?></div>
+                        <div class="answer"><?php echo $res->fetch(PDO::FETCH_OBJ)->valeur?></div>
                     </div>
                     <div class="qa">
-                        <div class="question" onclick="toggleAnswer(this)"><?php echo $res->fetch(PDO::FETCH_OBJ)?></div>
-                        <div class="answer"><?php echo $res->fetch(PDO::FETCH_OBJ)?></div>
+                        <div class="question" onclick="toggleAnswer(this)"><?php echo $res->fetch(PDO::FETCH_OBJ)->valeur?></div>
+                        <div class="answer"><?php echo $res->fetch(PDO::FETCH_OBJ)->valeur?></div>
                     </div>
                 </div>
             </div>
@@ -95,22 +118,22 @@
         <!-- Sites touristiques et activités -->
         <div class="section">
             <div class="section-header collapsed" onclick="toggleSection(this)">
-                <div class="section-title"><?php echo $res->fetch(PDO::FETCH_OBJ)?></div>
+                <div class="section-title"><?php echo $res->fetch(PDO::FETCH_OBJ)->valeur?></div>
             </div>
             <div class="section-content collapsed">
             <div class="periods-section">
                 <div class="periods-content">
                     <div class="qa">
-                        <div class="question" onclick="toggleAnswer(this)"><?php echo $res->fetch(PDO::FETCH_OBJ)?></div>
-                        <div class="answer"><?php echo $res->fetch(PDO::FETCH_OBJ)?></div>
+                        <div class="question" onclick="toggleAnswer(this)"><?php echo $res->fetch(PDO::FETCH_OBJ)->valeur->valeur?></div>
+                        <div class="answer"><?php echo $res->fetch(PDO::FETCH_OBJ)->valeur?></div>
                     </div>
                     <div class="qa">
-                        <div class="question" onclick="toggleAnswer(this)"><?php echo $res->fetch(PDO::FETCH_OBJ)?></div>
-                        <div class="answer"><?php echo $res->fetch(PDO::FETCH_OBJ)?></div>
+                        <div class="question" onclick="toggleAnswer(this)"><?php echo $res->fetch(PDO::FETCH_OBJ)->valeur?></div>
+                        <div class="answer"><?php echo $res->fetch(PDO::FETCH_OBJ)->valeur?></div>
                     </div>
                     <div class="qa">
-                        <div class="question" onclick="toggleAnswer(this)"><?php echo $res->fetch(PDO::FETCH_OBJ)?></div>
-                        <div class="answer"><?php echo $res->fetch(PDO::FETCH_OBJ)?></div>
+                        <div class="question" onclick="toggleAnswer(this)"><?php echo $res->fetch(PDO::FETCH_OBJ)->valeur?></div>
+                        <div class="answer"><?php echo $res->fetch(PDO::FETCH_OBJ)->valeur?></div>
                     </div>
                 </div>
             </div>
@@ -119,22 +142,22 @@
         <!-- Hébergement et restauration -->
         <div class="section v">
             <div class="section-header collapsed" onclick="toggleSection(this)">
-                <div class="section-title"><?php echo $res->fetch(PDO::FETCH_OBJ)?></div>
+                <div class="section-title"><?php echo $res->fetch(PDO::FETCH_OBJ)->valeur?></div>
             </div>
             <div class="section-content collapsed">
             <div class="periods-section">
                 <div class="periods-content">
                     <div class="qa">
-                        <div class="question" onclick="toggleAnswer(this)"><?php echo $res->fetch(PDO::FETCH_OBJ)?></div>
-                        <div class="answer"><?php echo $res->fetch(PDO::FETCH_OBJ)?></div>
+                        <div class="question" onclick="toggleAnswer(this)"><?php echo $res->fetch(PDO::FETCH_OBJ)->valeur?></div>
+                        <div class="answer"><?php echo $res->fetch(PDO::FETCH_OBJ)->valeur?></div>
                     </div>
                     <div class="qa">
-                        <div class="question" onclick="toggleAnswer(this)"><?php echo $res->fetch(PDO::FETCH_OBJ)?></div>
-                        <div class="answer"><?php echo $res->fetch(PDO::FETCH_OBJ)?></div>
+                        <div class="question" onclick="toggleAnswer(this)"><?php echo $res->fetch(PDO::FETCH_OBJ)->valeur?></div>
+                        <div class="answer"><?php echo $res->fetch(PDO::FETCH_OBJ)->valeur?></div>
                     </div>
                     <div class="qa">
-                        <div class="question" onclick="toggleAnswer(this)"><?php echo $res->fetch(PDO::FETCH_OBJ)?></div>
-                        <div class="answer"><?php echo $res->fetch(PDO::FETCH_OBJ)?></div>
+                        <div class="question" onclick="toggleAnswer(this)"><?php echo $res->fetch(PDO::FETCH_OBJ)->valeur?></div>
+                        <div class="answer"><?php echo $res->fetch(PDO::FETCH_OBJ)->valeur?></div>
                     </div>
                 </div>
             </div>
@@ -143,22 +166,22 @@
         <!-- Sécurité et accessibilité -->
         <div class="section">
             <div class="section-header collapsed" onclick="toggleSection(this)">
-                <div class="section-title"><?php echo $res->fetch(PDO::FETCH_OBJ)?></div>
+                <div class="section-title"><?php echo $res->fetch(PDO::FETCH_OBJ)->valeur?></div>
             </div>
             <div class="section-content collapsed">
             <div class="periods-section">
                 <div class="periods-content">
                     <div class="qa">
-                        <div class="question" onclick="toggleAnswer(this)"><?php echo $res->fetch(PDO::FETCH_OBJ)?></div>
+                        <div class="question" onclick="toggleAnswer(this)"><?php echo $res->fetch(PDO::FETCH_OBJ)->valeur?></div>
+                        <div class="answer"><?php echo $res->fetch(PDO::FETCH_OBJ)->valeur?></div>
+                    </div>
+                    <div class="qa">
+                        <div class="question" onclick="toggleAnswer(this)"><?php echo $res->fetch(PDO::FETCH_OBJ)->valeur?></div>
                         <div class="answer"><?php echo $res->fetch(PDO::FETCH_OBJ)?></div>
                     </div>
                     <div class="qa">
-                        <div class="question" onclick="toggleAnswer(this)"><?php echo $res->fetch(PDO::FETCH_OBJ)?></div>
-                        <div class="answer"><?php echo $res->fetch(PDO::FETCH_OBJ)?></div>
-                    </div>
-                    <div class="qa">
-                        <div class="question" onclick="toggleAnswer(this)"><?php echo $res->fetch(PDO::FETCH_OBJ)?></div>
-                        <div class="answer"><?php echo $res->fetch(PDO::FETCH_OBJ)?></div>
+                        <div class="question" onclick="toggleAnswer(this)"><?php echo $res->fetch(PDO::FETCH_OBJ)->valeur?></div>
+                        <div class="answer"><?php echo $res->fetch(PDO::FETCH_OBJ)->valeur?></div>
                     </div>
                 </div>
             </div>
@@ -167,22 +190,22 @@
         <!-- Technologie et connectivité -->
         <div class="section v">
             <div class="section-header collapsed" onclick="toggleSection(this)">
-                <div class="section-title"><?php echo $res->fetch(PDO::FETCH_OBJ)?></div>
+                <div class="section-title"><?php echo $res->fetch(PDO::FETCH_OBJ)->valeur?></div>
             </div>
             <div class="section-content collapsed">
             <div class="periods-section">
                 <div class="periods-content">
                     <div class="qa">
-                        <div class="question" onclick="toggleAnswer(this)"><?php echo $res->fetch(PDO::FETCH_OBJ)?></div>
-                        <div class="answer"><?php echo $res->fetch(PDO::FETCH_OBJ)?></div>
+                        <div class="question" onclick="toggleAnswer(this)"><?php echo $res->fetch(PDO::FETCH_OBJ)->valeur?></div>
+                        <div class="answer"><?php echo $res->fetch(PDO::FETCH_OBJ)->valeur?></div>
                     </div>
                     <div class="qa">
-                        <div class="question" onclick="toggleAnswer(this)"><?php echo $res->fetch(PDO::FETCH_OBJ)?></div>
-                        <div class="answer"><?php echo $res->fetch(PDO::FETCH_OBJ)?></div>
+                        <div class="question" onclick="toggleAnswer(this)"><?php echo $res->fetch(PDO::FETCH_OBJ)->valeur?></div>
+                        <div class="answer"><?php echo $res->fetch(PDO::FETCH_OBJ)->valeur?></div>
                     </div>
                     <div class="qa">
-                        <div class="question" onclick="toggleAnswer(this)"><?php echo $res->fetch(PDO::FETCH_OBJ)?></div>
-                        <div class="answer"><?php echo $res->fetch(PDO::FETCH_OBJ)?></div>
+                        <div class="question" onclick="toggleAnswer(this)"><?php echo $res->fetch(PDO::FETCH_OBJ)->valeur?></div>
+                        <div class="answer"><?php echo $res->fetch(PDO::FETCH_OBJ)->valeur?></div>
                     </div>
                 </div>
             </div>
@@ -191,22 +214,22 @@
         <!-- Argent et paiements -->
         <div class="section">
             <div class="section-header collapsed" onclick="toggleSection(this)">
-                <div class="section-title"><?php echo $res->fetch(PDO::FETCH_OBJ)?></div>
+                <div class="section-title"><?php echo $res->fetch(PDO::FETCH_OBJ)->valeur?></div>
             </div>
             <div class="section-content collapsed">
             <div class="periods-section">
                 <div class="periods-content">
                     <div class="qa">
-                        <div class="question" onclick="toggleAnswer(this)"><?php echo $res->fetch(PDO::FETCH_OBJ)?></div>
-                        <div class="answer"><?php echo $res->fetch(PDO::FETCH_OBJ)?></div>
+                        <div class="question" onclick="toggleAnswer(this)"><?php echo $res->fetch(PDO::FETCH_OBJ)->valeur?></div>
+                        <div class="answer"><?php echo $res->fetch(PDO::FETCH_OBJ)->valeur?></div>
                     </div>
                     <div class="qa">
-                        <div class="question" onclick="toggleAnswer(this)"><?php echo $res->fetch(PDO::FETCH_OBJ)?></div>
-                        <div class="answer"><?php echo $res->fetch(PDO::FETCH_OBJ)?></div>
+                        <div class="question" onclick="toggleAnswer(this)"><?php echo $res->fetch(PDO::FETCH_OBJ)->valeur?></div>
+                        <div class="answer"><?php echo $res->fetch(PDO::FETCH_OBJ)->valeur?></div>
                     </div>
                     <div class="qa">
-                        <div class="question" onclick="toggleAnswer(this)"><?php echo $res->fetch(PDO::FETCH_OBJ)?></div>
-                        <div class="answer"><?php echo $res->fetch(PDO::FETCH_OBJ)?></div>
+                        <div class="question" onclick="toggleAnswer(this)"><?php echo $res->fetch(PDO::FETCH_OBJ)->valeur?></div>
+                        <div class="answer"><?php echo $res->fetch(PDO::FETCH_OBJ)->valeur?></div>
                     </div>
                 </div>
             </div>
@@ -215,22 +238,22 @@
         <!-- Expérience locale et shopping -->
         <div class="section v">
             <div class="section-header collapsed" onclick="toggleSection(this)">
-                <div class="section-title"><?php echo $res->fetch(PDO::FETCH_OBJ)?></div>
+                <div class="section-title"><?php echo $res->fetch(PDO::FETCH_OBJ)->valeur?></div>
             </div>
             <div class="section-content collapsed">
             <div class="periods-section">
                 <div class="periods-content">
                     <div class="qa">
-                        <div class="question" onclick="toggleAnswer(this)"><?php echo $res->fetch(PDO::FETCH_OBJ)?></div>
-                        <div class="answer"><?php echo $res->fetch(PDO::FETCH_OBJ)?></div>
+                        <div class="question" onclick="toggleAnswer(this)"><?php echo $res->fetch(PDO::FETCH_OBJ)->valeur?></div>
+                        <div class="answer"><?php echo $res->fetch(PDO::FETCH_OBJ)->valeur ?></div>
                     </div>
                     <div class="qa">
-                        <div class="question" onclick="toggleAnswer(this)"><?php echo $res->fetch(PDO::FETCH_OBJ)?></div>
-                        <div class="answer"><?php echo $res->fetch(PDO::FETCH_OBJ)?></div>
+                        <div class="question" onclick="toggleAnswer(this)"><?php echo $res->fetch(PDO::FETCH_OBJ)->valeur?></div>
+                        <div class="answer"><?php echo $res->fetch(PDO::FETCH_OBJ)->valeur ?></div>
                     </div>
                     <div class="qa">
-                        <div class="question" onclick="toggleAnswer(this)"><?php echo $res->fetch(PDO::FETCH_OBJ)?></div>
-                        <div class="answer"><?php echo $res->fetch(PDO::FETCH_OBJ)?></div>
+                        <div class="question" onclick="toggleAnswer(this)"><?php echo $res->fetch(PDO::FETCH_OBJ)->valeur?></div>
+                        <div class="answer"><?php echo $res->fetch(PDO::FETCH_OBJ)->valeur ?></div>
                     </div>
                 </div>
             </div>
@@ -239,22 +262,22 @@
         <!-- Loisirs et divertissements -->
         <div class="section">
             <div class="section-header collapsed" onclick="toggleSection(this)">
-                <div class="section-title"><?php echo $res->fetch(PDO::FETCH_OBJ)?></div>
+                <div class="section-title"><?php echo $res->fetch(PDO::FETCH_OBJ)->valeur?></div>
             </div>
           <div class="section-content collapsed">
             <div class="periods-section">
                 <div class="periods-content">
                     <div class="qa">
-                        <div class="question" onclick="toggleAnswer(this)"><?php echo $res->fetch(PDO::FETCH_OBJ)?></div>
-                        <div class="answer"><?php echo $res->fetch(PDO::FETCH_OBJ)?></div>
+                        <div class="question" onclick="toggleAnswer(this)"><?php echo $res->fetch(PDO::FETCH_OBJ)->valeur?></div>
+                        <div class="answer"><?php echo $res->fetch(PDO::FETCH_OBJ) ->valeur?></div>
                     </div>
                     <div class="qa">
-                        <div class="question" onclick="toggleAnswer(this)"><?php echo $res->fetch(PDO::FETCH_OBJ)?></div>
-                        <div class="answer"><?php echo $res->fetch(PDO::FETCH_OBJ)?></div>
+                        <div class="question" onclick="toggleAnswer(this)"><?php echo $res->fetch(PDO::FETCH_OBJ)->valeur?></div>
+                        <div class="answer"><?php echo $res->fetch(PDO::FETCH_OBJ) ->valeur?></div>
                     </div>
                     <div class="qa">
-                        <div class="question" onclick="toggleAnswer(this)"><?php echo $res->fetch(PDO::FETCH_OBJ)?></div>
-                        <div class="answer"><?php echo $res->fetch(PDO::FETCH_OBJ)?></div>
+                        <div class="question" onclick="toggleAnswer(this)"><?php echo $res->fetch(PDO::FETCH_OBJ) ->valeur?></div>
+                        <div class="answer"><?php echo $res->fetch(PDO::FETCH_OBJ) ->valeur?></div>
                     </div>
                 </div>
             </div>
@@ -266,12 +289,12 @@
     <div class="anecdote__blocks">
         <div class="anecdote__header">
             <img src="img/histoire/anecdote_l.svg" alt="" class="anecdote__img">
-            <p class="anecdote__header__title"><?php echo $res->fetch(PDO::FETCH_OBJ)?></p>
+            <p class="anecdote__header__title"><?php echo $res->fetch(PDO::FETCH_OBJ)->valeur?></p>
             <img src="img/histoire/anecdote_r.svg" alt="" class="anecdote__img">
         </div>
         <div class="anecdote__block">
-            <h1 class="anecdote__title"><?php echo $res->fetch(PDO::FETCH_OBJ)?></h1>
-            <p class="anecdote__text"><?php echo $res->fetch(PDO::FETCH_OBJ)?></p>
+            <h1 class="anecdote__title"><?php echo $res->fetch(PDO::FETCH_OBJ)->valeur?></h1>
+            <p class="anecdote__text"><?php echo $res->fetch(PDO::FETCH_OBJ)->valeur?></p>
         </div>
     </div>
     </main>
@@ -288,23 +311,26 @@
     </footer>
 </body>
     <script>
-        function toggleSection(header) {
-            const content = header.nextElementSibling;
-            const isCollapsed = header.classList.contains('collapsed');
-            
-            if (isCollapsed) {
-                header.classList.remove('collapsed');
-                content.classList.remove('collapsed');
-                content.classList.add('expanded');
-            } else {
-                header.classList.add('collapsed');
-                content.classList.remove('expanded');
-                content.classList.add('collapsed');
-            }
+document.addEventListener('DOMContentLoaded', () => {
+    window.toggleSection = function(header) {
+        const content = header.nextElementSibling;
+        const isCollapsed = header.classList.contains('collapsed');
+
+        if (isCollapsed) {
+            header.classList.remove('collapsed');
+            content.classList.remove('collapsed');
+            content.classList.add('expanded');
+        } else {
+            header.classList.add('collapsed');
+            content.classList.remove('expanded');
+            content.classList.add('collapsed');
         }
-        function toggleAnswer(questionElement) {
-          const qa = questionElement.closest('.qa');
-          qa.classList.toggle('open');
-        }
-    </script>
+    };
+
+    window.toggleAnswer = function(questionElement) {
+        const qa = questionElement.closest('.qa');
+        qa.classList.toggle('open');
+    };
+});
+</script>
 </html>
