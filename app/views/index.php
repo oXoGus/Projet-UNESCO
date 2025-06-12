@@ -51,24 +51,22 @@
             <div class="main__blocks">
                 <div class="block1">
                     <div class="block__info">
-                        Notre équipe, constituée de trois étudiants en BUT INFORMATIQUE en première année, a le plaisir de vous présenter KYOTO et son patrimoine dans le cadre d’une médiation culturelle et numérique en partenariat avec L’UNESCO. Bonne visite à tous.
+                        <?php echo $res->fetch(PDO::FETCH_OBJ)?>
                     </div>
                     <img src="img/Byōdō-in.jpg" alt="">
                 </div>
                 <div class="block2">
                     <img src="img/Yasaka.jpg" alt="">
-                    <div class="block__info">
-                        Autrefois capitale, désormais capitale culturelle et plus belle ville du Japon, KYOTO  regorge de patrimoine et d’histoire. Nichée entre les montagnes, avec ses 2000 temples, ses sanctuaires, palais, jardins, son architecture et ses évènements culturels, il y en a pour tous les goûts et tous les âges. 
-                    </div>
+                    <div class="block__info"><?php echo $res->fetch(PDO::FETCH_OBJ)?></div>
                 </div>
                <div class="main__block">
                     <div class="block__info">
                         <img src="img/red_v.png" alt="">
                         <div class="block__texts">
-                            <p class="block__title ff1"><span>L</span>’histoire de Kyoto</p>
-                            <p class="block__text">Nichée entre les montagnes au centre de l'ile d’Honshu, Kyoto fut la capitale japonaise de 794 à 1868. Elle est considérée comme la plus belle ville du japon, et ayant échappée aux bombes de la seconde guerre mondiale, elle possède encore de nombreux bâtiments d'avant guerre. </p>
+                            <p class="block__title ff1"><?php echo $res->fetch(PDO::FETCH_OBJ)?></p>
+                            <p class="block__text"><?php echo $res->fetch(PDO::FETCH_OBJ)?></p>
                             <div class="block__btn ff1">
-                                <a href="histoire/histoire.php">en savoir +</a>
+                                <a href="histoire/histoire.php"><?php echo $res->fetch(PDO::FETCH_OBJ)?></a>
                             </div>
                         </div>
                     </div>
@@ -79,10 +77,10 @@
                     <div class="block__info right">
                         <img src="img/red_v.png" alt="">
                         <div class="block__texts">
-                            <p class="block__title ff1"><span>S</span>on patrimoine</p>
-                            <p class="block__text">Kyoto est considérée capitale culturelle du Japon avec près de 2 000 temples, ses sanctuaires et ses palais, ses ponts, ses jardins, son architecture et sa cuisine traditionnelle classée au patrimoine de l’UNESCO.   </p>
+                            <p class="block__title ff1"><?php echo $res->fetch(PDO::FETCH_OBJ)?></p>
+                            <p class="block__text"><?php echo $res->fetch(PDO::FETCH_OBJ)?></p>
                             <div class="block__btn ff1">
-                                <a href="patrimoine/patrimoine.php">aller plus loin</a>
+                                <a href="patrimoine/patrimoine.php"><?php echo $res->fetch(PDO::FETCH_OBJ)?></a>
                             </div>
                         </div>
                     </div>
