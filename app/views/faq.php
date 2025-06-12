@@ -29,7 +29,7 @@
               </nav>
               <a href="index.php" class="header__logo"><img src="img/logo.svg" alt=""></a>
               <div class="lang">
-                <button class="lang_btn"><p><?php if ($lang ===  "FR") {echo "Fr";} else {echo "En";}?></p></button>
+                <button class="lang_btn"><p><?php if ($lang ==  "FR") {echo "Fr";} else {echo "En";}?></p></button>
                 <div class="lang-content">
                   <a href="faq.php?lang=FR">Fr</a>
                   <a href="faq.php?lang=EN">En</a>

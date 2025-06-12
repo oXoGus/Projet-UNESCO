@@ -5,6 +5,7 @@
 
     if (isset($_GET['lang']) && !empty($_GET['lang'])){
         
+        echo "";
         // lang valide 
         $newLang = $_GET['lang'];
         if ($newLang === "FR" || $newLang === "EN"){
