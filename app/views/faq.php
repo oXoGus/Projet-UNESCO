@@ -36,9 +36,9 @@
                 </div>
               </div>
             </div>
-            <p class="header__title desktop-title">FAQ</p>
+            <p class="header__title desktop-title"><?php echo $res->fetch(PDO::FETCH_OBJ)?></p>
             <div class="header__title mobile-title">
-              <span>FAQ</span>
+              <span><?php echo $res->fetch(PDO::FETCH_OBJ)?></span>
             </div>
           </div>
         </header>
@@ -47,22 +47,22 @@
       <!-- Périodes et climats -->
       <div class="section">
         <div class="section-header" onclick="toggleSection(this)">
-            <div class="section-title"><p>Périodes et climats</p></div>
+            <div class="section-title"><p><?php echo $res->fetch(PDO::FETCH_OBJ)?></p></div>
         </div>
         <div class="section-content expanded">
             <div class="periods-section">
                 <div class="periods-content">
                     <div class="qa">
-                        <div class="question" onclick="toggleAnswer(this)">Quelle est la meilleure période pour visiter Kyoto ?</div>
-                        <div class="answer">La saison des cerisiers en fleurs prend généralement place entre fin mars et début avril...</div>
+                        <div class="question" onclick="toggleAnswer(this)"><?php echo $res->fetch(PDO::FETCH_OBJ)?></div>
+                        <div class="answer"><?php echo $res->fetch(PDO::FETCH_OBJ)?></div>
                     </div>
                     <div class="qa">
-                        <div class="question" onclick="toggleAnswer(this)">Le climat de Kyoto est-il difficile à supporter ?</div>
-                        <div class="answer">Kyoto connaît des étés très chauds et humides, et des hivers assez froids...</div>
+                        <div class="question" onclick="toggleAnswer(this)"><?php echo $res->fetch(PDO::FETCH_OBJ)?></div>
+                        <div class="answer"><?php echo $res->fetch(PDO::FETCH_OBJ)?></div>
                     </div>
                     <div class="qa">
-                        <div class="question" onclick="toggleAnswer(this)">Quand peut-on voir des cerisiers en fleurs à Kyoto ?</div>
-                        <div class="answer">Fin mars à début avril, avec des lieux comme le parc Maruyama, etc.</div>
+                        <div class="question" onclick="toggleAnswer(this)"><?php echo $res->fetch(PDO::FETCH_OBJ)?></div>
+                        <div class="answer"><?php echo $res->fetch(PDO::FETCH_OBJ)?></div>
                     </div>
                 </div>
             </div>
@@ -71,22 +71,22 @@
         <!-- Transports et déplacements -->
         <div class="section v">
             <div class="section-header collapsed" onclick="toggleSection(this)">
-              <div class="section-title">Transports et déplacements</div>
+              <div class="section-title"><?php echo $res->fetch(PDO::FETCH_OBJ)?></div>
             </div>
             <div class="section-content collapsed">
             <div class="periods-section">
                 <div class="periods-content">
                     <div class="qa">
-                        <div class="question" onclick="toggleAnswer(this)">Quelle est la meilleure période pour visiter Kyoto ?</div>
-                        <div class="answer">La saison des cerisiers en fleurs prend généralement place entre fin mars et début avril...</div>
+                        <div class="question" onclick="toggleAnswer(this)"><?php echo $res->fetch(PDO::FETCH_OBJ)?></div>
+                        <div class="answer"><?php echo $res->fetch(PDO::FETCH_OBJ)?></div>
                     </div>
                     <div class="qa">
-                        <div class="question" onclick="toggleAnswer(this)">Le climat de Kyoto est-il difficile à supporter ?</div>
-                        <div class="answer">Kyoto connaît des étés très chauds et humides, et des hivers assez froids...</div>
+                        <div class="question" onclick="toggleAnswer(this)"><?php echo $res->fetch(PDO::FETCH_OBJ)?></div>
+                        <div class="answer"><?php echo $res->fetch(PDO::FETCH_OBJ)?></div>
                     </div>
                     <div class="qa">
-                        <div class="question" onclick="toggleAnswer(this)">Quand peut-on voir des cerisiers en fleurs à Kyoto ?</div>
-                        <div class="answer">Fin mars à début avril, avec des lieux comme le parc Maruyama, etc.</div>
+                        <div class="question" onclick="toggleAnswer(this)"><?php echo $res->fetch(PDO::FETCH_OBJ)?></div>
+                        <div class="answer"><?php echo $res->fetch(PDO::FETCH_OBJ)?></div>
                     </div>
                 </div>
             </div>
@@ -95,22 +95,22 @@
         <!-- Sites touristiques et activités -->
         <div class="section">
             <div class="section-header collapsed" onclick="toggleSection(this)">
-                <div class="section-title">Sites touristiques et activités</div>
+                <div class="section-title"><?php echo $res->fetch(PDO::FETCH_OBJ)?></div>
             </div>
             <div class="section-content collapsed">
             <div class="periods-section">
                 <div class="periods-content">
                     <div class="qa">
-                        <div class="question" onclick="toggleAnswer(this)">Quelle est la meilleure période pour visiter Kyoto ?</div>
-                        <div class="answer">La saison des cerisiers en fleurs prend généralement place entre fin mars et début avril...</div>
+                        <div class="question" onclick="toggleAnswer(this)"><?php echo $res->fetch(PDO::FETCH_OBJ)?></div>
+                        <div class="answer"><?php echo $res->fetch(PDO::FETCH_OBJ)?></div>
                     </div>
                     <div class="qa">
-                        <div class="question" onclick="toggleAnswer(this)">Le climat de Kyoto est-il difficile à supporter ?</div>
-                        <div class="answer">Kyoto connaît des étés très chauds et humides, et des hivers assez froids...</div>
+                        <div class="question" onclick="toggleAnswer(this)"><?php echo $res->fetch(PDO::FETCH_OBJ)?></div>
+                        <div class="answer"><?php echo $res->fetch(PDO::FETCH_OBJ)?></div>
                     </div>
                     <div class="qa">
-                        <div class="question" onclick="toggleAnswer(this)">Quand peut-on voir des cerisiers en fleurs à Kyoto ?</div>
-                        <div class="answer">Fin mars à début avril, avec des lieux comme le parc Maruyama, etc.</div>
+                        <div class="question" onclick="toggleAnswer(this)"><?php echo $res->fetch(PDO::FETCH_OBJ)?></div>
+                        <div class="answer"><?php echo $res->fetch(PDO::FETCH_OBJ)?></div>
                     </div>
                 </div>
             </div>
@@ -119,22 +119,22 @@
         <!-- Hébergement et restauration -->
         <div class="section v">
             <div class="section-header collapsed" onclick="toggleSection(this)">
-                <div class="section-title">Hébergement et restauration</div>
+                <div class="section-title"><?php echo $res->fetch(PDO::FETCH_OBJ)?></div>
             </div>
             <div class="section-content collapsed">
             <div class="periods-section">
                 <div class="periods-content">
                     <div class="qa">
-                        <div class="question" onclick="toggleAnswer(this)">Quelle est la meilleure période pour visiter Kyoto ?</div>
-                        <div class="answer">La saison des cerisiers en fleurs prend généralement place entre fin mars et début avril...</div>
+                        <div class="question" onclick="toggleAnswer(this)"><?php echo $res->fetch(PDO::FETCH_OBJ)?></div>
+                        <div class="answer"><?php echo $res->fetch(PDO::FETCH_OBJ)?></div>
                     </div>
                     <div class="qa">
-                        <div class="question" onclick="toggleAnswer(this)">Le climat de Kyoto est-il difficile à supporter ?</div>
-                        <div class="answer">Kyoto connaît des étés très chauds et humides, et des hivers assez froids...</div>
+                        <div class="question" onclick="toggleAnswer(this)"><?php echo $res->fetch(PDO::FETCH_OBJ)?></div>
+                        <div class="answer"><?php echo $res->fetch(PDO::FETCH_OBJ)?></div>
                     </div>
                     <div class="qa">
-                        <div class="question" onclick="toggleAnswer(this)">Quand peut-on voir des cerisiers en fleurs à Kyoto ?</div>
-                        <div class="answer">Fin mars à début avril, avec des lieux comme le parc Maruyama, etc.</div>
+                        <div class="question" onclick="toggleAnswer(this)"><?php echo $res->fetch(PDO::FETCH_OBJ)?></div>
+                        <div class="answer"><?php echo $res->fetch(PDO::FETCH_OBJ)?></div>
                     </div>
                 </div>
             </div>
@@ -143,22 +143,22 @@
         <!-- Sécurité et accessibilité -->
         <div class="section">
             <div class="section-header collapsed" onclick="toggleSection(this)">
-                <div class="section-title">Sécurité et accessibilité</div>
+                <div class="section-title"><?php echo $res->fetch(PDO::FETCH_OBJ)?></div>
             </div>
             <div class="section-content collapsed">
             <div class="periods-section">
                 <div class="periods-content">
                     <div class="qa">
-                        <div class="question" onclick="toggleAnswer(this)">Quelle est la meilleure période pour visiter Kyoto ?</div>
-                        <div class="answer">La saison des cerisiers en fleurs prend généralement place entre fin mars et début avril...</div>
+                        <div class="question" onclick="toggleAnswer(this)"><?php echo $res->fetch(PDO::FETCH_OBJ)?></div>
+                        <div class="answer"><?php echo $res->fetch(PDO::FETCH_OBJ)?></div>
                     </div>
                     <div class="qa">
-                        <div class="question" onclick="toggleAnswer(this)">Le climat de Kyoto est-il difficile à supporter ?</div>
-                        <div class="answer">Kyoto connaît des étés très chauds et humides, et des hivers assez froids...</div>
+                        <div class="question" onclick="toggleAnswer(this)"><?php echo $res->fetch(PDO::FETCH_OBJ)?></div>
+                        <div class="answer"><?php echo $res->fetch(PDO::FETCH_OBJ)?></div>
                     </div>
                     <div class="qa">
-                        <div class="question" onclick="toggleAnswer(this)">Quand peut-on voir des cerisiers en fleurs à Kyoto ?</div>
-                        <div class="answer">Fin mars à début avril, avec des lieux comme le parc Maruyama, etc.</div>
+                        <div class="question" onclick="toggleAnswer(this)"><?php echo $res->fetch(PDO::FETCH_OBJ)?></div>
+                        <div class="answer"><?php echo $res->fetch(PDO::FETCH_OBJ)?></div>
                     </div>
                 </div>
             </div>
@@ -167,22 +167,22 @@
         <!-- Technologie et connectivité -->
         <div class="section v">
             <div class="section-header collapsed" onclick="toggleSection(this)">
-                <div class="section-title">Technologie et connectivité</div>
+                <div class="section-title"><?php echo $res->fetch(PDO::FETCH_OBJ)?></div>
             </div>
             <div class="section-content collapsed">
             <div class="periods-section">
                 <div class="periods-content">
                     <div class="qa">
-                        <div class="question" onclick="toggleAnswer(this)">Quelle est la meilleure période pour visiter Kyoto ?</div>
-                        <div class="answer">La saison des cerisiers en fleurs prend généralement place entre fin mars et début avril...</div>
+                        <div class="question" onclick="toggleAnswer(this)"><?php echo $res->fetch(PDO::FETCH_OBJ)?></div>
+                        <div class="answer"><?php echo $res->fetch(PDO::FETCH_OBJ)?></div>
                     </div>
                     <div class="qa">
-                        <div class="question" onclick="toggleAnswer(this)">Le climat de Kyoto est-il difficile à supporter ?</div>
-                        <div class="answer">Kyoto connaît des étés très chauds et humides, et des hivers assez froids...</div>
+                        <div class="question" onclick="toggleAnswer(this)"><?php echo $res->fetch(PDO::FETCH_OBJ)?></div>
+                        <div class="answer"><?php echo $res->fetch(PDO::FETCH_OBJ)?></div>
                     </div>
                     <div class="qa">
-                        <div class="question" onclick="toggleAnswer(this)">Quand peut-on voir des cerisiers en fleurs à Kyoto ?</div>
-                        <div class="answer">Fin mars à début avril, avec des lieux comme le parc Maruyama, etc.</div>
+                        <div class="question" onclick="toggleAnswer(this)"><?php echo $res->fetch(PDO::FETCH_OBJ)?></div>
+                        <div class="answer"><?php echo $res->fetch(PDO::FETCH_OBJ)?></div>
                     </div>
                 </div>
             </div>
@@ -191,22 +191,22 @@
         <!-- Argent et paiements -->
         <div class="section">
             <div class="section-header collapsed" onclick="toggleSection(this)">
-                <div class="section-title">Argent et paiements</div>
+                <div class="section-title"><?php echo $res->fetch(PDO::FETCH_OBJ)?></div>
             </div>
             <div class="section-content collapsed">
             <div class="periods-section">
                 <div class="periods-content">
                     <div class="qa">
-                        <div class="question" onclick="toggleAnswer(this)">Quelle est la meilleure période pour visiter Kyoto ?</div>
-                        <div class="answer">La saison des cerisiers en fleurs prend généralement place entre fin mars et début avril...</div>
+                        <div class="question" onclick="toggleAnswer(this)"><?php echo $res->fetch(PDO::FETCH_OBJ)?></div>
+                        <div class="answer"><?php echo $res->fetch(PDO::FETCH_OBJ)?></div>
                     </div>
                     <div class="qa">
-                        <div class="question" onclick="toggleAnswer(this)">Le climat de Kyoto est-il difficile à supporter ?</div>
-                        <div class="answer">Kyoto connaît des étés très chauds et humides, et des hivers assez froids...</div>
+                        <div class="question" onclick="toggleAnswer(this)"><?php echo $res->fetch(PDO::FETCH_OBJ)?></div>
+                        <div class="answer"><?php echo $res->fetch(PDO::FETCH_OBJ)?></div>
                     </div>
                     <div class="qa">
-                        <div class="question" onclick="toggleAnswer(this)">Quand peut-on voir des cerisiers en fleurs à Kyoto ?</div>
-                        <div class="answer">Fin mars à début avril, avec des lieux comme le parc Maruyama, etc.</div>
+                        <div class="question" onclick="toggleAnswer(this)"><?php echo $res->fetch(PDO::FETCH_OBJ)?></div>
+                        <div class="answer"><?php echo $res->fetch(PDO::FETCH_OBJ)?></div>
                     </div>
                 </div>
             </div>
@@ -215,22 +215,22 @@
         <!-- Expérience locale et shopping -->
         <div class="section v">
             <div class="section-header collapsed" onclick="toggleSection(this)">
-                <div class="section-title">Expérience locale et shopping</div>
+                <div class="section-title"><?php echo $res->fetch(PDO::FETCH_OBJ)?></div>
             </div>
             <div class="section-content collapsed">
             <div class="periods-section">
                 <div class="periods-content">
                     <div class="qa">
-                        <div class="question" onclick="toggleAnswer(this)">Quelle est la meilleure période pour visiter Kyoto ?</div>
-                        <div class="answer">La saison des cerisiers en fleurs prend généralement place entre fin mars et début avril...</div>
+                        <div class="question" onclick="toggleAnswer(this)"><?php echo $res->fetch(PDO::FETCH_OBJ)?></div>
+                        <div class="answer"><?php echo $res->fetch(PDO::FETCH_OBJ)?></div>
                     </div>
                     <div class="qa">
-                        <div class="question" onclick="toggleAnswer(this)">Le climat de Kyoto est-il difficile à supporter ?</div>
-                        <div class="answer">Kyoto connaît des étés très chauds et humides, et des hivers assez froids...</div>
+                        <div class="question" onclick="toggleAnswer(this)"><?php echo $res->fetch(PDO::FETCH_OBJ)?></div>
+                        <div class="answer"><?php echo $res->fetch(PDO::FETCH_OBJ)?></div>
                     </div>
                     <div class="qa">
-                        <div class="question" onclick="toggleAnswer(this)">Quand peut-on voir des cerisiers en fleurs à Kyoto ?</div>
-                        <div class="answer">Fin mars à début avril, avec des lieux comme le parc Maruyama, etc.</div>
+                        <div class="question" onclick="toggleAnswer(this)"><?php echo $res->fetch(PDO::FETCH_OBJ)?></div>
+                        <div class="answer"><?php echo $res->fetch(PDO::FETCH_OBJ)?></div>
                     </div>
                 </div>
             </div>
@@ -239,22 +239,22 @@
         <!-- Loisirs et divertissements -->
         <div class="section">
             <div class="section-header collapsed" onclick="toggleSection(this)">
-                <div class="section-title">Loisirs et divertissements</div>
+                <div class="section-title"><?php echo $res->fetch(PDO::FETCH_OBJ)?></div>
             </div>
           <div class="section-content collapsed">
             <div class="periods-section">
                 <div class="periods-content">
                     <div class="qa">
-                        <div class="question" onclick="toggleAnswer(this)">Quelle est la meilleure période pour visiter Kyoto ?</div>
-                        <div class="answer">La saison des cerisiers en fleurs prend généralement place entre fin mars et début avril...</div>
+                        <div class="question" onclick="toggleAnswer(this)"><?php echo $res->fetch(PDO::FETCH_OBJ)?></div>
+                        <div class="answer"><?php echo $res->fetch(PDO::FETCH_OBJ)?></div>
                     </div>
                     <div class="qa">
-                        <div class="question" onclick="toggleAnswer(this)">Le climat de Kyoto est-il difficile à supporter ?</div>
-                        <div class="answer">Kyoto connaît des étés très chauds et humides, et des hivers assez froids...</div>
+                        <div class="question" onclick="toggleAnswer(this)"><?php echo $res->fetch(PDO::FETCH_OBJ)?></div>
+                        <div class="answer"><?php echo $res->fetch(PDO::FETCH_OBJ)?></div>
                     </div>
                     <div class="qa">
-                        <div class="question" onclick="toggleAnswer(this)">Quand peut-on voir des cerisiers en fleurs à Kyoto ?</div>
-                        <div class="answer">Fin mars à début avril, avec des lieux comme le parc Maruyama, etc.</div>
+                        <div class="question" onclick="toggleAnswer(this)"><?php echo $res->fetch(PDO::FETCH_OBJ)?></div>
+                        <div class="answer"><?php echo $res->fetch(PDO::FETCH_OBJ)?></div>
                     </div>
                 </div>
             </div>
@@ -266,12 +266,12 @@
     <div class="anecdote__blocks">
         <div class="anecdote__header">
             <img src="img/histoire/anecdote_l.svg" alt="" class="anecdote__img">
-            <p class="anecdote__header__title">Anecdotes</p>
+            <p class="anecdote__header__title"><?php echo $res->fetch(PDO::FETCH_OBJ)?></p>
             <img src="img/histoire/anecdote_r.svg" alt="" class="anecdote__img">
         </div>
         <div class="anecdote__block">
-            <h1 class="anecdote__title">1. Kyoto, capitale pendant plus de 1000 ans</h1>
-            <p class="anecdote__text">Fondée en 794 sous le nom de Heian-kyō, Kyoto a été la capitale impériale du Japon pendant plus d’un millénaire, jusqu’à la restauration de Meiji en 1868. Pendant tout ce temps, elle fut le centre culturel, artistique et spirituel du pays — même lorsque le pouvoir politique se déplaçait vers d'autres régions.</p>
+            <h1 class="anecdote__title"><?php echo $res->fetch(PDO::FETCH_OBJ)?></h1>
+            <p class="anecdote__text"><?php echo $res->fetch(PDO::FETCH_OBJ)?></p>
         </div>
     </div>
     </main>
